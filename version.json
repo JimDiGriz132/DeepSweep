@@ -2,6 +2,7 @@
   "current": "0.8",
   "changes": {
 	"0.8": [
+	  "PWA fix",
 	  "Tweaks"
 	],
     "0.7": [

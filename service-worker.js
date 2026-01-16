@@ -66,7 +66,7 @@ self.addEventListener('fetch', event => {
             !networkResponse ||
             networkResponse.status !== 200 ||
             networkResponse.type !== 'basic' ||
-            networkResponse.url.startsWith('chrome-extension://') // izbjegni ekstenzije
+            networkResponse.url.startsWith('chrome-extension://')
           ) {
             return networkResponse;
           }
