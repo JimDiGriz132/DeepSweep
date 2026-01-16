@@ -13,7 +13,8 @@ body {
   background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
   margin: 0;
   padding: 16px;
-  min-height: 100vh;
+  height: auto;
+  min-height: 50dvh;
   color: #333;
 }
 
@@ -24,7 +25,7 @@ body {
   align-items: center;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  padding: 6px 6px;
+  padding: 12px 16px;
   border-radius: 16px;
   margin-bottom: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -48,11 +49,12 @@ body {
 
 #appVersion {
   background: linear-gradient(90deg, #4facfe, #00f2fe);
-  color: #333;
+  color: white;
   padding: 6px 14px;
   border-radius: 12px;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
+  transition: all 0.2s;
 }
 
 #appVersion:hover {
@@ -75,11 +77,10 @@ body {
   width: 90%;
 }
 
-/* ===== LIST ===== */
+/* ===== LIST – reset default browser style ===== */
 #container,
 #container ul,
 #container li {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -88,85 +89,78 @@ body {
 .floor, .group > div, .item {
   background: white;
   border-radius: 16px;
-  margin: 12px 0;
+  margin: 10px 0;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  
 }
 
-.floor:hover, .group > div:hover, .item:hover {
+ .group > div:hover, .item:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Floor – puna širina, bez margina */
+/* Floor */
 .floor {
   font-weight: bold;
   font-size: 1.3em;
   padding: 0;
+
   background: linear-gradient(90deg, #b3d9ff, #d0e7f9);
 }
 
 .floor > div {
-  padding: 12px 16px;
+  padding: 10px 10px;
 }
 
-/* Grupa – pomaknuta 20px desno unutar floor-a */
+/* Group */
 .group {
   margin: 8px 0 8px 20px;
   width: calc(100% - 40px);
 }
 
-/* Grupa wrapper */
+/* Group wrapper */
 .group > div {
   background: #f8fbff;
   border-radius: 12px;
   padding: 10px 14px;
   margin: 6px 0;
+  margin-left: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Item – pomaknut dodatno 20px desno unutar grupe */
+/* Item */
 .item {
-  margin: 6px 0 6px 20px;
+  margin: 6px 0 6px 40px;
   padding: 0;
 }
 
 /* Item wrapper */
 .item > div {
-  padding: 10px 14px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  width: calc(100% - 40px);
+  margin-left: 5px;
+  padding: 6px 4px 6px 4px;
 }
 
-/* Prvi red: checkbox + slika */
+/* 1st row: checkbox + pic */
 .item .first-row {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
-.item input[type="checkbox"] {
-  width: 24px;
-  height: 24px;
-  margin: 0;
-  accent-color: #4facfe;
-  cursor: pointer;
-}
-
-.item img {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  cursor: pointer;
-}
-
-/* Naziv */
+/* Name */
 .item label {
+  flex: 1;
+  min-width: 0;
   font-weight: 600;
-  font-size: 1.0em;
+  font-size: 1.05em;
   color: #222;
   line-height: 1.35;
   display: -webkit-box;
@@ -177,33 +171,59 @@ body {
   word-break: normal;
 }
 
-/* Location  */
+/* Location btn  */
 a.locationBtn {
   background: linear-gradient(90deg, #667eea, #764ba2);
   color: white;
   border-radius: 12px;
   padding: 8px 16px;
   font-weight: 600;
-  font-size: 1.0em;
   box-shadow: 0 3px 12px rgba(102, 126, 234, 0.3);
   transition: all 0.2s;
-  align-self: flex-start;
+  white-space: nowrap;
   text-align: center;
+  min-width: 140px;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
-a.locationBtn:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+/* Phone */
+@media (max-width: 640px) {
+  .item > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+	justify-content: center; 
+    min-height: 100px;
+	padding: 6px 4px 6px 4px;
+  }
+
+  .item label {
+    margin-left: 32px;
+    width: 100%;
+    flex: none;
+  }
+  .item .first-row {
+    align-self: left;
+  }
+  
+  a.locationBtn {
+    margin-left: 0;
+    align-self: flex-start;
+	margin-left: 32px;
+    width: 140px;
+	max-width: calc(100% - 28px);
+	box-sizing: border-box;
+  }
 }
 
-/* Dropdown */
-#locationFilter {
-  padding: 10px 14px;
-  font-size: 1em;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* ===== Item pics ===== */
+.item img,
+.item .first-row img {
+  height: 40px; 
+  width: auto;
+  object-fit: contain;
+
 }
 
 /* Tooltip */
@@ -221,7 +241,6 @@ a.locationBtn:hover {
   max-width: 320px;
   pointer-events: auto;
   box-sizing: border-box;
-  right: auto;
 }
 
 /* Logo */
@@ -234,7 +253,7 @@ a.locationBtn:hover {
   filter: drop-shadow(0 6px 16px rgba(0,0,0,0.15));
 }
 
-/* Broom animacija */
+/* Broom animation */
 .broom-anim {
   position: absolute;
   top: 50%;
@@ -259,52 +278,6 @@ a.locationBtn:hover {
     opacity: 0;
   }
 }
-
-
-#container {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#container > li.floor {
-  margin: 12px 0 0 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-}
-
-
-#container .group {
-  margin: 8px 0 8px 28px !important;
-  width: calc(100% - 28px) !important;
-  padding: 0 !important;
-}
-
-
-#container .item {
-  margin: 6px 0 6px 28px !important;
-  padding: 0 !important;
-  width: calc(100% - 28px) !important;
-}
-
-
-.group > div,
-.item > div {
-  padding: 12px 16px !important;
-}
-
-
-.group > div {
-  background: #f8fbff !important;
-  border-radius: 12px !important;
-}
-
-.item > div {
-  background: #ffffff !important;
-  border-radius: 10px !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
-}
-
 </style>
 </head>
 <body>

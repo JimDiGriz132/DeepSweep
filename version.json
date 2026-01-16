@@ -1,6 +1,9 @@
 {
-  "current": "0.7",
+  "current": "0.8",
   "changes": {
+	"0.8": [
+	  "Tweaks"
+	],
     "0.7": [
 	  "Version badge fix",
 	  "Location filter list fix",
