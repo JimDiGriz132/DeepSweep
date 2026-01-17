@@ -1,14 +1,14 @@
 const CACHE_NAME = 'deepsweep-cache-v1';
 
 const urlsToCache = [
-  '/',                        
-  '/index.html',
-  '/manifest.json',
-  '/data.json',
-  '/version.json',
-  '/logo.png',
-  '/icon-192.png',
-  '/icon-512.png'
+  './',                        
+  './index.html',
+  './manifest.json',
+  './data.json',
+  './version.json',
+  './logo.png',
+  './icon-192.png',
+  './icon-512.png'
 
 ];
 
