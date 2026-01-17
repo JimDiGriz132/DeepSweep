@@ -1,7 +1,7 @@
 {
-  "current": "0.8",
+  "current": "0.8.1",
   "changes": {
-	"0.8": [
+	"0.8.1": [
 	  "PWA fix",
 	  "Tweaks"
 	],
@@ -26,4 +26,5 @@
       "UX fixes"
     ]
   }
+
 }
