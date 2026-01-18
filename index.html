@@ -456,18 +456,29 @@ a.locationBtn {
 <!-- TOP BAR -->
 <div class="topBar">
   <!-- Left: Menu -->
-  <button id="menuBtn" class="menu-btn">☰</button> 
-<div id="menuDropdown" class="menu-dropdown" style="display: none;">
-  <ul>
-    <li><button id="installBtn" class="menu-item-btn">Install</button><li>
-	<li><a href="https://cloversalad.com/" class="menu-item-btn">CloverSalad</a></li>
-    <li><a href="https://fish-metrics.com/" class="menu-item-btn">FishMetrics</a></li>
-       
-  </ul>
-</div>
-  <!-- Right:  Version badge -->
+  <button id="menuBtn" class="menu-btn">☰</button>
+
+  <div id="menuDropdown" class="menu-dropdown" style="display: none;">
+    <ul>
+      <li><button id="installBtn" class="menu-item-btn">Install</button></li>
+      
+      <!-- Ovdje su ispravljeni linkovi – UVJEK sa https:// !!! -->
+      <li>
+        <a href="https://cloversalad.com/" class="menu-item-btn" target="_blank" rel="noopener noreferrer">
+          CloverSalad
+        </a>
+      </li>
+      <li>
+        <a href="https://fish-metrics.com/" class="menu-item-btn" target="_blank" rel="noopener noreferrer">
+          FishMetrics
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Right: Version badge -->
   <div class="right-group">
-    <div id="appVersion">v<span id="versionNum"></span></div> 
+    <div id="appVersion">v<span id="versionNum"></span></div>
   </div>
 </div>
 
