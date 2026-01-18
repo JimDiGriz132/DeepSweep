@@ -1,6 +1,12 @@
 {
-  "current": "0.8.2",
+  "current": "0.9",
   "changes": {
+	"0.9": [
+	  "Fixed no data when installed",
+	  "Top bar polishing",
+	  "Menu button added",
+	  "Awesome sites added"
+	],
 	"0.8.2": [
 	  "Service worker fix"
 	],
