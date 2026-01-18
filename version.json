@@ -2,6 +2,9 @@
   "current": "0.8.1",
   "changes": {
 	"0.8.1": [
+	  "Service worker fix"
+	],
+	"0.8": [
 	  "PWA fix",
 	  "Tweaks"
 	],
@@ -26,5 +29,4 @@
       "UX fixes"
     ]
   }
-
 }

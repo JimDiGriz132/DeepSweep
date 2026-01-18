@@ -905,22 +905,7 @@ if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
   })
   .catch(err => console.error('Failed to load version.json', err));
 
-function playBroomAnimation(groupLi) {
-  const wrapper = groupLi.querySelector('div');
-  if (!wrapper) return;
 
-  if (wrapper.querySelector('.broom-sweep')) return;
-
-  const broom = document.createElement('span');
-  broom.className = 'broom-sweep';
-  broom.textContent = '🧹';
-
-  wrapper.appendChild(broom);
-
-  broom.addEventListener('animationend', () => {
-    broom.remove();
-  });
-}
 </script>
 </body>
 </html>
