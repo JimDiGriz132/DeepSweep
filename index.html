@@ -310,6 +310,11 @@ a.locationBtn {
 <ul id="container"></ul>
 
 <script>
+// --- INSTALL BUTTON + ALERT ---
+
+const installAlert = document.getElementById('installAlert');
+let installTooltipVisible = false;
+
 // --- PWA install logic ---
 let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
@@ -320,10 +325,6 @@ installBtn.addEventListener('touchend', (e) => {
   e.preventDefault();
 });
 
-// --- INSTALL BUTTON + ALERT ---
-
-const installAlert = document.getElementById('installAlert');
-let installTooltipVisible = false;
 
 function showInstallTooltip() {
   if (installAlert.style.display === 'block') return;

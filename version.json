@@ -1,7 +1,7 @@
 {
-  "current": "0.8.1",
+  "current": "0.8.2",
   "changes": {
-	"0.8.1": [
+	"0.8.2": [
 	  "Service worker fix"
 	],
 	"0.8": [
