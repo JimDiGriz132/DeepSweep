@@ -532,9 +532,29 @@ let installTooltipVisible = false;
 // --- PWA install logic ---
 let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
-function hideInstall(){ installBtn.style.display='none'; installAlert.style.display='none'; }
-if(window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true){ hideInstall(); }
-window.addEventListener('beforeinstallprompt', (e)=>{ e.preventDefault(); deferredPrompt=e; installBtn.style.display='block'; });
+function hideInstall() {
+  const installLi = installBtn.closest('li');
+  if (installLi) installLi.style.display = 'none';
+  installAlert.style.display = 'none';
+}
+
+function showInstall() {
+  const installLi = installBtn.closest('li');
+  if (installLi) installLi.style.display = '';
+}
+
+// Check if app is installed
+if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+  hideInstall();
+} else {
+  showInstall(); 
+}
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  showInstall();
+});
 installBtn.addEventListener('touchend', (e) => {
   e.preventDefault();
 });
