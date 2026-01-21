@@ -1,6 +1,14 @@
 {
-  "current": "0.9",
+  "current": "0.9.5",
   "changes": {
+	"0.9.5": [
+	  "Fixed bunch of names",
+	  "Changed location buttons from Wiki to CloverSalad",
+	  "Fixed location button clipping text on mobile",
+	  "Top bar change",
+	  "New progress bar",
+	  "Carp Diem Discor added"
+	],
 	"0.9": [
 	  "Fixed no data when installed",
 	  "Top bar polishing",
