@@ -1,6 +1,15 @@
 {
-  "current": "0.9.5",
+  "current": "0.9.6",
   "changes": {
+	"0.9.6": [
+	  "Progress bar tweaks",
+	  "Neon style",
+	  "Welcome screen",
+	  "Backup and restore",
+	  "First Floor is now Ground Floor",
+	  "Search bar"
+	],
+	 
 	"0.9.5": [
 	  "Fixed bunch of names",
 	  "Changed location buttons from Wiki to CloverSalad",

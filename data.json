@@ -1,6 +1,6 @@
 [
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Cobra Sunglasses",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/6f/GL_T_Cobra_sunglasses_2.png",
@@ -8,7 +8,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-11"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Scuba Diver Mask",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/eb/CR_T_Scuba_diver_mask_2.png",
@@ -16,7 +16,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-22"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Sunglasses",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b5/AU_T_Sunglasses_2.png",
@@ -24,7 +24,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-19"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Muay Thai Headgear",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/dc/TH_T_Muay_thai_headgear_2.png",
@@ -32,7 +32,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-15"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Carnival Costume",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/2b/AM_T_Carnival_Costume.png",
@@ -40,7 +40,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-9"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Protective Suit",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/3f/CP_T_Protective_suit_2.png",
@@ -48,7 +48,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-21"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Glasses",
     "name": "Protective Mask",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c8/CP_T_Protective_mask_2.png",
@@ -56,7 +56,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-20"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Koala Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/42/AU_T_Koala_hat_2.png",
@@ -64,7 +64,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-11"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Bubba Gump Cap",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b8/TH_T_Bubba_gump_cap_2.png",
@@ -72,7 +72,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-5"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Beaver Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5c/GL_T_Beaver_hat_2.png",
@@ -80,7 +80,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-3"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Baseball Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d2/GL_T_Baseball_hat_2.png",
@@ -88,7 +88,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-1"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Al ‘Capone Cap",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/7c/GL_T_AlCapone_hat_2.png",
@@ -96,7 +96,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-2"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Cork Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/07/AU_T_Cork_hat_2.png",
@@ -104,7 +104,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-6"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Pirate Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/ff/CR_T_Pirate_hat_2.png",
@@ -112,7 +112,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-19"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Scottish Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/2a/SC_T_Scottish_hat_2.png",
@@ -120,7 +120,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-20"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Snowman Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/2c/AL_T_Snowman_hat_2.png",
@@ -128,7 +128,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-21"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Straw Hat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/23/PI_T_Straw_hat_2.png",
@@ -136,7 +136,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-7"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Colorful Headdress",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/82/GL_T_Colorful_headdress_2.png",
@@ -144,7 +144,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Boné",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/dc/AM_T_Bon%C3%A9.png",
@@ -152,7 +152,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Hats",
     "name": "Viking Helmet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/11/AL_T_Viking_helmet_2.png",
@@ -160,7 +160,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-25"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shells",
     "name": "Pearl",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c2/AU_T_Pearl_2.png",
@@ -168,7 +168,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-15"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shells",
     "name": "Common Seashell",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/aa/Common_SeaShell_icon.png",
@@ -176,7 +176,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-2"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shells",
     "name": "Turban Shell",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a3/Turban_Shell_Icon.png",
@@ -184,7 +184,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-1"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shells",
     "name": "Tiny Pink Shell",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/23/Tiny_Pink_Shell_icon.png",
@@ -192,7 +192,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shells",
     "name": "Urchin Shell",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/47/Urchin_Shell_Icon.png",
@@ -200,7 +200,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-5"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shells",
     "name": "Striped Beach Shell",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/ce/Striped_Beach_Shell_icon.png",
@@ -208,7 +208,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-6"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Clothing",
     "name": "Gold Necklace",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/9a/TH_T_Gold_necklace_2.png",
@@ -216,7 +216,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-11"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Clothing",
     "name": "Kilt",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/e0/SC_T_Kilt_2.png",
@@ -224,7 +224,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-13"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Clothing",
     "name": "Football Jersey",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/25/AM_T_Football_Jersey.png",
@@ -232,7 +232,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-16"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Clothing",
     "name": "Bikini Top",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/3b/CR_T_Bikini_top_2.png",
@@ -240,7 +240,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Clothing",
     "name": "Life Jacket",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/7f/AL_T_Life_jacket_2.png",
@@ -248,7 +248,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-16"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Clothing",
     "name": "Maori Jewelry",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/7e/AU_T_Maori_Jewelery_2.png",
@@ -256,7 +256,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-25"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Gloves",
     "name": "Mouse Glove",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5d/GL_T_Mouse_glove_2.png",
@@ -264,7 +264,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-31"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shoes",
     "name": "Concrete Shoe",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a7/GL_T_Concrete_shoe_2.png",
@@ -272,7 +272,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-12"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shoes",
     "name": "Thai Poulaine Shoe",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/9c/TH_T_Thai_Poulaine_Shoes_2.png",
@@ -280,7 +280,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-25"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shoes",
     "name": "Flipper",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/9d/CR_T_Flipper_2.png",
@@ -288,7 +288,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-11"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shoes",
     "name": "Flip Flops",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/85/PI_T_Flip_flops_2.png",
@@ -296,7 +296,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-13"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shoes",
     "name": "Old Boot",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/88/SC_T_Old_boot_2.png",
@@ -304,7 +304,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-18"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Shoes",
     "name": "Snowshoe",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/6d/AL_T_Snowshoe_2.png",
@@ -312,7 +312,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-22"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 1",
     "name": "Armor",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/18/SC_T_Armor_2.png",
@@ -320,7 +320,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-1"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 1",
     "name": "Excalibur",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b1/SC_T_Excalibur_2.png",
@@ -328,7 +328,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-33"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 1",
     "name": "Sai Knife",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d5/CP_T_Sai_knive_2.png",
@@ -336,7 +336,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-28"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Rusty Axe Head",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/2d/AM_T_Rusty_Axe_Head.png",
@@ -344,7 +344,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-20"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Giant Shark Tooth",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/64/AU_T_Giant_Shark_Tooth_2.png",
@@ -352,7 +352,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-26"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Boomerang",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a7/AU_T_Boomerang_2.png",
@@ -360,7 +360,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Compass",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/4a/AL_T_Compass_2.png",
@@ -368,7 +368,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Moose Antler",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/28/AL_T_Moose_antler_2.png",
@@ -376,7 +376,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-18"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Amazonian Blowpipe",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/0b/AM_T_Amazonian_biowpipe.png",
@@ -384,7 +384,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-1"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Arrow",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/ad/GL_T_Arrow_2.png",
@@ -392,7 +392,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-5"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Marine Trap",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/f7/AU_T_Marine_trap_2.png",
@@ -400,7 +400,7 @@
     "locationLink": "https://creatures-of-the-deep-app.fandom.com/wiki/Map:Australia"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Unicorn Horn",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/06/SC_T_Unicorn_horn_2.png",
@@ -408,7 +408,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-24"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Walrus Tusk",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/eb/AL_T_Walrus_tusk_2.png",
@@ -416,7 +416,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-27"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Feather",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/97/AM_T_Feather.png",
@@ -424,7 +424,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-14"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Parrot Feather",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5c/AU_T_Parrot_feather_2.png",
@@ -432,7 +432,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-14"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Tea Pot",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/eb/SC_T_Tea_pot_2.png",
@@ -440,7 +440,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-23"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Cauldron",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/af/SC_T_Cauldron_2.png",
@@ -448,7 +448,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-5"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Gold Pan",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/48/AL_T_Gold_pan_2.png",
@@ -456,7 +456,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-12"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Costa Rican Vase",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d4/CR_T_Costa_Rican_vase_2.png",
@@ -464,7 +464,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-9"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Medieval Mug",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d2/SC_T_Medieval_mug_2.png",
@@ -472,7 +472,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-16"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 2",
     "name": "Whale Bone",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/e4/HI_T_Whale_Bone.png",
@@ -480,7 +480,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-7"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Old Fishing Net",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b3/TH_T_Old_fishing_net_2.png",
@@ -488,7 +488,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-16"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Harpoon",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/9e/AL_T_Harpoon_2.png",
@@ -496,7 +496,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-14"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Ancient Statue",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/35/TH_T_Ancient_statue_2.png",
@@ -504,7 +504,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-1"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Mysterious Stone Sphere",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d6/CR_T_Mysterious_stone_sphere_2.png",
@@ -512,7 +512,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-14"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Weird Stone",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/ae/SC_T_Weird_stone_2.png",
@@ -520,7 +520,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-29"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Silk Tapestry",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/83/TH_T_Silk_tapestry_2.png",
@@ -528,7 +528,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-21"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Stone Block",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c8/SC_T_Stone_block_2.png",
@@ -536,7 +536,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-22"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Carpet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/06/TH_T_Carpet_2.png",
@@ -544,7 +544,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-6"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Pipe",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d5/GL_T_Pipe_2.png",
@@ -552,7 +552,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-22"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Manhole Cover",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/e2/CP_T_Manhole_Cover_2.png",
@@ -560,7 +560,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-10"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Oxcart Wheel",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/31/CR_T_Oxcart_wheel_2.png",
@@ -568,7 +568,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-17"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Gear",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/9c/PI_T_Gear_2.png",
@@ -576,7 +576,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-8"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 3",
     "name": "Wooden Figurine",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d3/AM_T_Wooden_Figurine.png",
@@ -584,7 +584,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-25"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 4",
     "name": "Sporran",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/8a/SC_T_Tartan_2.png",
@@ -592,7 +592,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-21"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 4",
     "name": "Waterproof Watch",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/06/CR_T_Waterproof_watch_2.png",
@@ -600,7 +600,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-29"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Antiques 4",
     "name": "Mask",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/59/PI_T_Mask_2.png",
@@ -608,7 +608,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-3"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/8d/PI_T_FridgeMagnet_2.png",
@@ -616,7 +616,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-21"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/1c/Fridge_Magnet_GL_icon.png",
@@ -624,7 +624,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-32"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/4b/CR_T_Fridge_Magnet.png",
@@ -632,7 +632,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-12"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d2/AL_T_Fridge_Magnet.png",
@@ -640,7 +640,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-6"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c7/AU_T_Fridge_Magnet.png",
@@ -648,7 +648,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-28"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/4d/SC_T_Fridge_Magnet.png",
@@ -656,7 +656,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-34"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c2/TH_T_Fridge_Magnet.png",
@@ -664,7 +664,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-10"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/22/AM_T_Fridge_Magnet.png",
@@ -672,7 +672,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-28"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Fridge Magnets",
     "name": "Fridge Magnet",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a4/Fridge_Magnet_icon.png",
@@ -680,7 +680,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-21"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 1",
     "name": "Amazonian Honey",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b1/AM_T_Amazonian_Honey.png",
@@ -688,7 +688,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-2"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 1",
     "name": "Black Pudding",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/e0/SC_T_Black_pudding_2.png",
@@ -696,7 +696,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-3"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 1",
     "name": "Haggis",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/8a/SC_T_Haggis_2.png",
@@ -704,7 +704,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-12"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 1",
     "name": "Coffee Bean Bag",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/72/AM_T_Coffee_Bean_Bag.png",
@@ -712,7 +712,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-11"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 1",
     "name": "Ninja Pizza Slice",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/df/CP_T_Ninja_Pizza_Slice_2.png",
@@ -720,7 +720,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-13"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 1",
     "name": "Bowl of Rice ",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/33/TH_T_Bowl_of_rice_2.png",
@@ -728,7 +728,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 2",
     "name": "Hot Dog",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/bc/GL_T_Hot_dog_2.png",
@@ -736,7 +736,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-18"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 2",
     "name": "Golden Apple",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c0/SC_T_Golden_apple_2.png",
@@ -744,7 +744,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-32"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 2",
     "name": "Shrimp Stick",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/37/TH_T_Shrimp_stick_2.png",
@@ -752,7 +752,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-20"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Food 2",
     "name": "Pina Colada Drink",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/3f/PI_T_Pinacolada_drink_2.png",
@@ -760,7 +760,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-9"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Message in a Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/94/PI_T_Message_in_a_bottle_2.png",
@@ -768,7 +768,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-5"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Plastic Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/1e/GL_T_Plastic_bottle_2.png",
@@ -776,7 +776,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-23"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Massage Oil Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c9/TH_T_Massage_oil_bottle_2.png",
@@ -784,7 +784,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-13"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Brazil Cachaca",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/6d/AM_T_Brazil_Cachaca.png",
@@ -792,7 +792,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-6"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Water Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/f4/CP_T_Water_bottle_2.png",
@@ -800,7 +800,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-35"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Empty Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/59/PI_T_Empty_bottle_2.png",
@@ -808,7 +808,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-1"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Whisky Scotch Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5c/SC_T_Whiskey_scotch_bottle_2.png",
@@ -816,7 +816,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-26"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Plastic Water Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/09/TH_T_Plastic_water_bottle_2.png",
@@ -824,7 +824,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-19"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Bottle of Suntan Oil",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/0d/AU_T_Bottle_of_suntan_oil_2.png",
@@ -832,7 +832,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-5"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Plastic Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/ab/PI_T_Plastic_bottle_2.png",
@@ -840,7 +840,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-4"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "White Bottle",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/56/CR_T_White_bottle_2.png",
@@ -848,7 +848,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-30"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Glass Bottle with XXX Sign",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/f4/GL_T_Glass_bottle_with_XXX_sign_2.png",
@@ -856,7 +856,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-15"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Bottles",
     "name": "Pesticides",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/f0/CP_T_Pesticides_2.png",
@@ -864,7 +864,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-15"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Yellow Floppy Disk 5.25",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b8/CR_T_Yellow_floppy_disk_5.25_2.png",
@@ -872,7 +872,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-32"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Green Floppy Disk",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/de/GL_T_Green_floppy_disc_2.png",
@@ -880,7 +880,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-16"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Floppy Disc",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/82/AU_T_Floppy_Disc_2.png",
@@ -888,7 +888,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-27"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Floppy Disk 5.25 Blue",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/70/SC_T_Floppy_disk_5.25_blue_2.png",
@@ -896,7 +896,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-8"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Boom Floppy Disc",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/31/GL_T_Boom_floppy_disc_2.png",
@@ -904,7 +904,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-6"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Cartridge",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/7e/CP_T_Cartridge_2.png",
@@ -912,7 +912,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-2"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Green Yellow Disk",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5b/AM_T_Green_Yellow_Disk.png",
@@ -920,7 +920,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-26"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "Tetrix Floppy Disk 3.5",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/73/AL_T_Tetrix_floppy_disk_3.5_2.png",
@@ -928,7 +928,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-23"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Floppy Disks",
     "name": "“Sweet Fighter” Disk",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/51/TH_T_Sweet_Fighter_Disk_2.png",
@@ -936,7 +936,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-24"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "VHS Tapes",
     "name": "Video Cassette",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a3/GL_T_Video_cassette_2.png",
@@ -944,7 +944,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-28"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "VHS Tapes",
     "name": "Video Cassette",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/0a/AL_T_Video_cassette_2.png",
@@ -952,7 +952,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-24"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Explorer Diary",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/ef/AU_T_Explorer_Diary_2.png",
@@ -960,7 +960,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-10"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Robby Burns Poetry",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/46/SC_T_Robby_burns_poetry_2.png",
@@ -968,7 +968,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-19"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Research Files Vol.1",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/ef/CP_T_Technical_documentation_volume_1_2.png",
@@ -976,7 +976,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-24"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Research Files Vol.2",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/65/CP_T_Technical_documentation_volume_2_2.png",
@@ -984,7 +984,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-25"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Research Files Vol.3",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/78/CP_T_Research_files_volume_3_2.png",
@@ -992,7 +992,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-26"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Research Files Vol.4",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b0/CP_T_Research_files_volume_4_2.png",
@@ -1000,7 +1000,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-27"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Prof. Flux's Notes",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/62/CP_T_Prof._Flux%27s_notes_2.png",
@@ -1008,7 +1008,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-19"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Paradise Island Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/07/Tourist_Brochure-Paradise_Island_icon.png",
@@ -1016,7 +1016,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-13"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Great Lakes Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5f/Tourist_Brochure-Great_Lakes_icon.png",
@@ -1024,7 +1024,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-14"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Costa Rica Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/df/Tourist_Brochure-Costa_Rica_icon.png",
@@ -1032,7 +1032,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-15"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Alaska Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/af/Tourist_Brochure-Alaska_Icon.png",
@@ -1040,7 +1040,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-16"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Australia Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b0/Tourist_Brochure-Australia_icon.png",
@@ -1048,7 +1048,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-17"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Scotland Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b1/Tourist_Brochure-Scotland_icon.png",
@@ -1056,7 +1056,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-18"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Thailand Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/41/Tourist_Brochure-Thailand_Icon.png",
@@ -1064,7 +1064,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-19"
   },
   {
-    "floor": "First Floor",
+    "floor": "Ground Floor",
     "group": "Library",
     "name": "Amazon Tourist Brochure",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/0f/Tourist_Brochure-Amazon_Icon.png",
@@ -1072,7 +1072,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-20"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 1",
     "name": "Bicycle Frame",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5e/CR_T_Bicycle_frame_2.png",
@@ -1080,7 +1080,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-3"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 1",
     "name": "Australian Cricket Bat",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c3/AU_T_Australian_cricket_bat_2.png",
@@ -1088,7 +1088,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-2"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 1",
     "name": "Caber",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/39/SC_T_Caber_2.png",
@@ -1096,7 +1096,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-4"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 1",
     "name": "Golf Club",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/21/SC_T_Golf_club_2.png",
@@ -1104,7 +1104,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-10"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 1",
     "name": "Golf Bag",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/e7/SC_T_Golf_clubs_bag_2.png",
@@ -1112,7 +1112,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-11"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Aussie Rule Ball",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a0/AU_T_Aussie_rule_ball_2.png",
@@ -1120,7 +1120,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-1"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Chess Piece",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/67/SC_T_Chess_piece_2.png",
@@ -1128,7 +1128,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-6"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Soccer Ball",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/ca/AM_T_Soccer_Ball.png",
@@ -1136,7 +1136,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-22"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Basketball",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/ec/GL_T_Basketball_2.png",
@@ -1144,7 +1144,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-7"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Wilson Ball",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/45/PI_T_Wilson_ball_2.png",
@@ -1152,7 +1152,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-19"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Football Cup",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/0e/AM_T_Football_Cup.png",
@@ -1160,7 +1160,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-15"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 2",
     "name": "Golf Ball",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/0f/SC_T_Golf_ball_2.png",
@@ -1168,7 +1168,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-9"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 3",
     "name": "Ski",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/7/72/AL_T_Ski_2.png",
@@ -1176,7 +1176,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-19"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 3",
     "name": "Surfboard",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c8/CR_T_Surfboard_2.png",
@@ -1184,7 +1184,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-25"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 3",
     "name": "Surfboard",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/ff/AU_T_Surfboard_2.png",
@@ -1192,7 +1192,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-20"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Sports 3",
     "name": "Skateboard",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/14/CP_T_Skateboard_2.png",
@@ -1200,7 +1200,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-29"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Frozen Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/39/AL_T_Frozen_Chest.png",
@@ -1208,7 +1208,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-8"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Treasure Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/2c/CR_T_Treasure_chest_2.png",
@@ -1216,7 +1216,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-26"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Chest with a Skull",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/6f/PI_T_Chest_with_a_skull_2.png",
@@ -1224,7 +1224,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-18"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Tribal Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/9/92/GL_T_Tribal_Chest.png",
@@ -1232,7 +1232,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-25"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Oriental Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/62/TH_T_Oriental_chest_2.png",
@@ -1240,7 +1240,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-17"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Wooden Crate",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/4c/AU_T_Wooden_crate_2.png",
@@ -1248,7 +1248,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-23"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Crocodile Crate",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c1/AU_T_Treasure_Chest.png",
@@ -1256,7 +1256,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-7"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Wooden Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/5/5a/HI_T_Wooden_Chest.png",
@@ -1264,7 +1264,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-12"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Medieval Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/2/2c/SC_T_Medieval_Chest.png",
@@ -1272,7 +1272,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-14"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Chests",
     "name": "Decorated Chest",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/36/AM_T_Decorated_chest.png",
@@ -1280,7 +1280,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-13"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Frozen Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/f4/AL_T_Frozen_Key.png",
@@ -1288,7 +1288,7 @@
     "locationLink": "https://cloversalad.com/items?map=Alaska&fish=T4-9"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Key with a Chain",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/4/4d/CR_T_Key_Chain.png",
@@ -1296,7 +1296,7 @@
     "locationLink": "https://cloversalad.com/items?map=CostaRica&fish=T3-2"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Key With a Skull",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/0/03/PI_T_Key_with_a_skull_2.png",
@@ -1304,7 +1304,7 @@
     "locationLink": "https://cloversalad.com/items?map=Paradise&fish=T1-17"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Tribal Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a0/GL_T_Tribal_Key.png",
@@ -1312,7 +1312,7 @@
     "locationLink": "https://cloversalad.com/items?map=GreatLakes&fish=T2-26"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Oriental Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/84/TH_H_Oriental_Key_2.png",
@@ -1320,7 +1320,7 @@
     "locationLink": "https://cloversalad.com/items?map=Thailand&fish=T7-18"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Crocodile Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/19/AU_T_Crocodile_Key.png",
@@ -1328,7 +1328,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-8"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Mysterious Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/65/HI_T_Mysterious_Key.png",
@@ -1336,7 +1336,7 @@
     "locationLink": "https://cloversalad.com/items?map=Marina&fish=T0-11"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Medieval Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/3/34/SC_T_Medieval_Key.png",
@@ -1344,7 +1344,7 @@
     "locationLink": "https://cloversalad.com/items?map=Scotland&fish=T6-15"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Keys",
     "name": "Stone Key",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/d/d4/AM_T_Stone_key.png",
@@ -1352,7 +1352,7 @@
     "locationLink": "https://cloversalad.com/items?map=Amazon&fish=T8-23"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Signs",
     "name": "High Radiation Sign",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/f/f2/CP_T_High_radiation_sign_2.png",
@@ -1360,7 +1360,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-8"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Signs",
     "name": "Kangaroo Road Sign",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a3/AU_T_Kangaroo_road_sign_2.png",
@@ -1368,7 +1368,7 @@
     "locationLink": "https://cloversalad.com/items?map=Australia&fish=T5-24"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Signs",
     "name": "Sign (Chemical Plant)",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/e/e2/CP_T_Sign_2.png",
@@ -1376,7 +1376,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-30"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Laboratory 1",
     "name": "Geiger Counter",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/b/b3/CP_T_Geiger_Counter_2.png",
@@ -1384,7 +1384,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-4"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Laboratory 1",
     "name": "Phosphorus",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/8/83/CP_T_Phosphorus_2.png",
@@ -1392,7 +1392,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-16"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Laboratory 1",
     "name": "Old Battery",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/6/61/CP_T_Old_battery_2.png",
@@ -1400,7 +1400,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-14"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Laboratory 2",
     "name": "Laboratory Equipment",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/1/17/CP_T_Laboratory_equipment_2.png",
@@ -1408,7 +1408,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-9"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Wind Turbine",
     "name": "Wind Turbine (Assembled)",
     "img": "https://i.ibb.co/S7dzCXCD/windturbine.png",
@@ -1416,7 +1416,7 @@
     "locationLink": ""
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Wind Turbine",
     "name": "Wind Turbine Dynamo",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/cb/CP_T_Wind_turbine_dynamo_2.png",
@@ -1424,7 +1424,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-38"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Wind Turbine",
     "name": "Wind Turbine Propeller Blade",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/c/c2/CP_T_Wind_turbine_propeller_blade_2.png",
@@ -1432,7 +1432,7 @@
     "locationLink": "https://cloversalad.com/items?map=ChemicalPlant&fish=T9-36"
   },
   {
-    "floor": "First Floor - Bridge Extension",
+    "floor": "Ground Floor - Bridge Extension",
     "group": "Wind Turbine",
     "name": "Wind Turbine Propeller Hub",
     "img": "https://static.wikia.nocookie.net/creatures-of-the-deep-app/images/a/a7/CP_T_Wind_turbine_propeller_hub_2.png",
