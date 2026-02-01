@@ -1,6 +1,14 @@
 {
-  "current": "0.9.6",
+  "current": "0.9.7",
   "changes": {
+	"0.9.7": [
+	"Items with same names now save state correctly",
+	"New and working item location links",
+	"Export & Import buttons more visible",
+	"Glowing Missing Items button when in filtering mode",
+	"Small chages for better phone experience",
+	"A few style tweaks"
+	],
 	"0.9.6": [
 	  "Progress bar tweaks",
 	  "Neon style",

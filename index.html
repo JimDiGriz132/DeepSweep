@@ -234,11 +234,46 @@ body {
   filter: drop-shadow(0 0 5px #00f2fe);
 }
 
+
+/* EXPORT IMPORT VERSION CONTAINER */
+.header-right-area {
+    position: absolute;
+    right: 15px;
+    top: -18px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    z-index: 1100;
+}
+
+/* Buttons with appversin stlye */
+.version-style-btn, #appVersion {
+    position: static !important;
+    font-size: 10px;
+    color: #004080;
+    font-weight: bold;
+    background: rgba(255,255,255,0.5);
+    padding: 2px 6px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.version-style-btn:hover {
+    background: rgba(255,255,255,0.8);
+    transform: scale(1.05);
+}
+
+.version-style-btn:active {
+    transform: scale(0.95);
+}
+
 /* App version */
 #appVersion {
-  position: absolute;
-  right: 15px;
-  top: -18px;
+  position: static;
   font-size: 10px;
   color: #004080;
   font-weight: bold;
@@ -306,7 +341,7 @@ body {
 
 #itemSearch {
   width: 100%;
-  padding: 12px 40px 12px 15px; /* Povećan desni padding zbog gumba */
+  padding: 12px 40px 12px 15px; 
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
@@ -436,6 +471,7 @@ padding: 0 12px;
   box-sizing: border-box;
 
 }
+
 /* Popup style */
 .fish-popup {
   position: absolute;
@@ -513,7 +549,7 @@ padding: 0 12px;
 }
 
 .floor:hover, .item:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
+  background: linear-gradient(135deg, rgba(25, 48, 88, 0.9), rgba(20, 65, 120, 0.9)) !important;
   box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
 }
 
@@ -525,8 +561,10 @@ padding: 0 12px;
 
 /* Floor */
 .floor {
-  background: linear-gradient(135deg, rgba(161, 196, 253, 0.4), rgba(194, 233, 251, 0.4)) !important;
+  background: linear-gradient(135deg, rgba(16, 33, 62, 0.8), rgba(15, 52, 96, 0.8)) !important;
   border-left: 5px solid #00f2fe; /* Neon line left */
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .floor > div {
@@ -541,12 +579,23 @@ padding: 0 12px;
 
 /* Group wrapper */
 .group > div {
-  background: #f8fbff;
+  
+  background: rgba(255, 255, 255, 0.07) !important; 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 10px 14px;
   margin: 6px 0;
   margin-left: 5px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.group > div:hover {
+  
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(0, 242, 254, 0.3);
 }
 
 /* Item */
@@ -580,7 +629,7 @@ padding: 0 12px;
   min-width: 0;
   font-weight: 600;
   font-size: 1.05em;
-  color: #222;
+  color: #ffffff;
   line-height: 1.35;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -680,7 +729,38 @@ a.locationBtn {
 	box-sizing: border-box;
 	white-space: nowrap;
   }
+  
+  .floor > div {
+      display: flex;
+      align-items: center; 
+	  gap: 5px;
+  }
+  .floor b, .floor span { 
+      font-size: 13px !important; 
+      letter-spacing: -0.5px !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 70vw; 
+  }
+
+  
+  .floor, .group > div {
+      width: auto !important; 
+      display: block !important;
+  }
+
+  a.locationBtn {
+      
+      font-size: 11px;
+      padding: 6px 10px;
+      min-width: 120px;
+      margin-left: 32px; /* Poravnanje s labelom */
+  }
+  
 }
+
+
 
 /* ===== Item pics ===== */
 .item img,
@@ -861,25 +941,13 @@ input[type="checkbox"]:checked::after {
   font-weight: bold;
 }
 
-/* EXPORT-IMPORT BUTTONS */
-.menu-btn-group {
-  display: flex;
-  gap: 4px; 
-  width: 100%;
+/* Active button style (filter on) */
+#openUncheckedBtn.active-filter {
+    background: #00f2fe !important;
+    color: white !important;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+    transform: scale(0.98);
 }
-
-.btn-half {
-  flex: 1; 
-  padding: 8px 0 !important; 
-  font-size: 0.9em !important;
-}
-
-
-.btn-row {
-  display: flex;
-  justify-content: center;
-}
-
 
 </style>
 </head>
@@ -921,7 +989,11 @@ input[type="checkbox"]:checked::after {
     </div>
   </div>
 
-  <div id="appVersion">v<span id="versionNum"></span></div>
+<div class="header-right-area">
+    <button class="version-style-btn" id="exportBtn">EXPORT</button>
+    <button class="version-style-btn" id="importBtn">IMPORT</button>
+    <div id="appVersion"></div> <input type="file" id="importFile" style="display:none" accept=".json">
+</div>
 
   <div id="menuDropdown" class="menu-dropdown">
     <ul>
@@ -930,13 +1002,7 @@ input[type="checkbox"]:checked::after {
       <li><a href="https://fish-metrics.com/" class="menu-item-btn" target="_blank">FishMetrics</a></li>
 
 	  <li><button id="showHelpBtn" class="menu-item-btn">Help & Instructions</button></li>
-	  <li class="btn-row">
-		<div class="menu-btn-group">
-			<button id="exportBtn" class="menu-item-btn btn-half" style="background: linear-gradient(90deg, #42e695, #3bb2b8);">Export</button>
-			<button id="importBtn" class="menu-item-btn btn-half" style="background: linear-gradient(90deg, #f2994a, #f2c94c);">Import</button>
-		</div>
-		<input type="file" id="importFile" style="display:none" accept=".json">
-	</li>
+	  
     </ul>
   </div>
 </div>
@@ -1289,21 +1355,32 @@ function buildUI(data){
 
   const container = document.getElementById('container');
 
-  function createItem(item, groupCheckbox, floorCheckbox){
+function createItem(item, groupCheckbox, floorCheckbox) {
   const li = document.createElement('li'); 
   li.className = 'item';
 
   const wrapper = document.createElement('div');
-
-  const id = `${item.floor}_${item.group}_${item.name}`.replace(/\s/g,'_');
-
+    
+  // 1. GENERIRANJE IDENTIČNOG ID-A
+  // Prvo očistimo svaku komponentu od razmaka, a onda ih spojimo podvlakom
+  const f = (item.floor || "").replace(/\s/g, '_');
+  const g = (item.group || "").replace(/\s/g, '_');
+  const n = (item.name || "").replace(/\s/g, '_');
+  const l = (item.locationName || "Marina").replace(/\s/g, '_');
+  
+  const id = `${f}_${g}_${n}_${l}`;
+    
   const cb = document.createElement('input'); 
   cb.type = 'checkbox'; 
   cb.id = id; 
   cb.dataset.id = id;
-  if(state[id]!==undefined) cb.checked = state[id];
 
-  cb.addEventListener('change', ()=>{
+  // Provjera stanja u memoriji
+  if (state[id] !== undefined) {
+    cb.checked = state[id];
+  }
+
+  cb.addEventListener('change', () => {
     if (navigator.vibrate) navigator.vibrate(15);
     state[id] = cb.checked;
     updateGroupAndFloor(groupCheckbox, floorCheckbox);
@@ -1314,7 +1391,7 @@ function buildUI(data){
   const img = document.createElement('img'); 
   img.src = item.img; 
   img.alt = item.name;
-  img.addEventListener('click', ()=>{ 
+  img.addEventListener('click', () => { 
     cb.checked = !cb.checked; 
     cb.dispatchEvent(new Event('change', { bubbles: true }));
   });
@@ -1322,9 +1399,8 @@ function buildUI(data){
   const label = document.createElement('label'); 
   label.setAttribute('for', id); 
   label.textContent = item.name;
-  label.title = item.name; // za tooltip na mobitelu
+  label.title = item.name; 
 
-  // Novi div za prvi red: checkbox + slika
   const firstRow = document.createElement('div');
   firstRow.className = 'first-row';
   firstRow.appendChild(cb);
@@ -1333,7 +1409,8 @@ function buildUI(data){
   wrapper.appendChild(firstRow);
   wrapper.appendChild(label);
 
-  if(item.locationName && item.locationLink){
+  // Gumb za lokaciju (ovdje koristimo originalni item.locationName s razmacima za prikaz)
+  if (item.locationName && item.locationLink) {
     const locBtn = document.createElement('a');
     locBtn.textContent = item.locationName;
     locBtn.href = item.locationLink;
@@ -1345,7 +1422,6 @@ function buildUI(data){
   li.appendChild(wrapper);
   return li;
 }
-
  function createGroup(groupName, items, floorCheckbox) {
   const li = document.createElement('li'); li.className = 'group';
   const wrapper = document.createElement('div');
@@ -1525,60 +1601,51 @@ function syncGroupAndFloorCheckboxes() {
 }
 
 // --- Find Unfound with Location Filter (Toggle Behavior) ---
-let missingOpen = false; // prati je li trenutno otvoreno
+let missingOpen = false; 
+
 function runMissingItemsFilter() {
   const filter = document.getElementById('locationFilter').value;
+  const btn = document.getElementById('openUncheckedBtn'); 
 
   if (missingOpen) {
     document.querySelectorAll('li.floor').forEach(floorLi => {
       const groupsList = floorLi.querySelector('ul');
       if (groupsList) groupsList.style.display = 'none';
-
       const floorToggle = floorLi.querySelector('.toggle');
       if (floorToggle) floorToggle.textContent = '▶';
-
       floorLi.querySelectorAll('li.group').forEach(groupLi => {
         const ul = groupLi.querySelector('ul');
         const toggle = groupLi.querySelector('.toggle');
         if (ul) ul.style.display = 'none';
         if (toggle) toggle.textContent = '▶';
-
         groupLi.querySelectorAll('li.item').forEach(itemLi => {
           itemLi.style.display = '';
         });
       });
     });
-
+    btn.classList.remove('active-filter'); 
     missingOpen = false;
     return;
   }
 
   document.querySelectorAll('li.floor').forEach(floorLi => {
     let floorHasUnchecked = false;
-
     floorLi.querySelectorAll('li.group').forEach(groupLi => {
       let groupHasUnchecked = false;
-
       groupLi.querySelectorAll('li.item').forEach(itemLi => {
         const cb = itemLi.querySelector('input[type=checkbox]');
         const locBtn = itemLi.querySelector('.locationBtn');
         const locName = locBtn ? locBtn.textContent : null;
-
-        const matchesLocation =
-          filter === '-all-' || filter === locName;
-
+        const matchesLocation = filter === '-all-' || filter === locName;
         if (!matchesLocation || cb.checked) {
           itemLi.style.display = 'none';
           return;
         }
-
         itemLi.style.display = '';
         groupHasUnchecked = true;
       });
-
       const ul = groupLi.querySelector('ul');
       const toggle = groupLi.querySelector('.toggle');
-
       if (groupHasUnchecked) {
         ul.style.display = 'block';
         toggle.textContent = '▼';
@@ -1588,10 +1655,8 @@ function runMissingItemsFilter() {
         toggle.textContent = '▶';
       }
     });
-
     const floorUl = floorLi.querySelector('ul');
     const floorToggle = floorLi.querySelector('.toggle');
-
     if (floorHasUnchecked) {
       floorUl.style.display = 'block';
       floorToggle.textContent = '▼';
@@ -1600,27 +1665,19 @@ function runMissingItemsFilter() {
       floorToggle.textContent = '▶';
     }
   });
-
+  btn.classList.add('active-filter');
   missingOpen = true;
 }
 
+
 function refreshMissingItemsFilter() {
   if (!missingOpen) return;
-
-  // privremeno ugasi flag
   missingOpen = false;
   runMissingItemsFilter();
 }
 
-document
-  .getElementById('openUncheckedBtn')
-  .addEventListener('click', runMissingItemsFilter);
-
-document
-  .getElementById('locationFilter')
-  .addEventListener('change', refreshMissingItemsFilter);
-
-
+document.getElementById('openUncheckedBtn').addEventListener('click', runMissingItemsFilter);
+document.getElementById('locationFilter').addEventListener('change', refreshMissingItemsFilter);
 
 // ================= VERSION BADGE TOOLTIP =================
 fetch('/version.json')
@@ -1727,12 +1784,20 @@ const itemSearch = document.getElementById('itemSearch');
 const clearSearch = document.getElementById('clearSearch');
 
 if (itemSearch && clearSearch) {
-    // Funkcija koja pokreće filter
+    
     itemSearch.addEventListener('input', function() {
         const term = this.value.toLowerCase().trim();
+        
+        
+        if (term.length > 0 && typeof missingOpen !== 'undefined' && missingOpen) {
+            missingOpen = false;
+            const miBtn = document.getElementById('openUncheckedBtn');
+            if (miBtn) miBtn.classList.remove('active-filter');
+        }
+
         const isMissingOnly = (typeof missingOpen !== 'undefined') ? missingOpen : false;
 
-        // Pokaži/sakrij X gumb
+        
         clearSearch.style.display = term.length > 0 ? 'flex' : 'none';
 
         document.querySelectorAll('li.floor').forEach(floorLi => {
@@ -1786,26 +1851,28 @@ if (itemSearch && clearSearch) {
         });
     });
 
-   
-	// Logika za X gumb s minimiziranjem svega
+    
     clearSearch.addEventListener('click', function() {
         itemSearch.value = '';
         this.style.display = 'none';
         
-        // 1. Osvježi listu (da se vrate svi itemi)
+        
+        const miBtn = document.getElementById('openUncheckedBtn');
+        if (miBtn) miBtn.classList.remove('active-filter');
+        if (typeof missingOpen !== 'undefined') missingOpen = false;
+
+        
         itemSearch.dispatchEvent(new Event('input'));
 
-        // 2. Minimiziraj sve Floors i Groups (zatvaranje lista)
+        
         document.querySelectorAll('li.floor, li.group').forEach(el => {
             const ul = el.querySelector('ul');
             const toggle = el.querySelector('.toggle');
             
-            if (ul) {
-                ul.style.display = 'none'; // Zatvori listu
-            }
+            if (ul) ul.style.display = 'none';
             if (toggle) {
-                toggle.textContent = '▶'; // Vrati strelicu u početni položaj
-                toggle.classList.remove('active'); // Makni aktivnu klasu ako je koristiš
+                toggle.textContent = '▶';
+                toggle.classList.remove('active');
             }
         });
 
@@ -1813,81 +1880,100 @@ if (itemSearch && clearSearch) {
     });
 }
 
-// --- EXPORT DATA ---
-document.getElementById('exportBtn').addEventListener('click', () => {
-    const data = localStorage.getItem('deepsweepState');
-    if (!data || data === '{}') {
-        alert("No progress to backup yet!");
-        return;
+
+document.addEventListener('DOMContentLoaded', () => {
+    // --- EXPORT DATA ---
+    const exportBtn = document.getElementById('exportBtn');
+    if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+            const rawData = localStorage.getItem('deepsweepState');
+            const dataObj = rawData ? JSON.parse(rawData) : null;
+
+            if (!dataObj || Object.keys(dataObj).length === 0) {
+                alert("No progress to backup yet!");
+                return;
+            }
+
+            const data = JSON.stringify(dataObj, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const now = new Date();
+            const dateStr = now.toISOString().slice(0, 10);
+            const timeStr = now.getHours().toString().padStart(2, '0') + '-' + 
+                           now.getMinutes().toString().padStart(2, '0');
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `DeepSweep_Backup_${dateStr}_${timeStr}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
     }
 
-    const blob = new Blob([data], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    
-    // Generiranje vremena (YYYY-MM-DD_HH-mm)
-    const now = new Date();
-    const dateStr = now.toISOString().slice(0, 10); // 2026-01-31
-    const timeStr = now.getHours().toString().padStart(2, '0') + '-' + 
-                    now.getMinutes().toString().padStart(2, '0');
-    
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `DeepSweep_Backup_${dateStr}_${timeStr}.json`;
-    document.body.appendChild(a);
-    a.click();
-    
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    // --- IMPORT DATA ---
+    const importBtn = document.getElementById('importBtn');
+    const importFile = document.getElementById('importFile');
+
+    if (importBtn && importFile) {
+        importBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            importFile.click();
+        });
+
+        importFile.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                try {
+                    const importedData = JSON.parse(event.target.result);
+
+                    if (confirm("Importing this backup will overwrite your current progress. Do you want to continue?")) {
+                        const cleanedData = {};
+                        const rawLocations = [
+                            "Paradise Island", "Great Lakes", "Costa Rica", "Alaska", 
+                            "Australia", "Scotland", "Thailand", "Amazon", 
+                            "Marina", "Chemical Plant"
+                        ];
+
+                        const validSuffixes = rawLocations.map(loc => "_" + loc.replace(/\s/g, '_'));
+
+                        Object.keys(importedData).forEach(key => {
+                            const isStructure = key.startsWith('group_') || key.startsWith('floor_');
+                            const hasValidLocation = validSuffixes.some(suffix => key.endsWith(suffix));
+
+                            if (isStructure || hasValidLocation) {
+                                cleanedData[key] = importedData[key];
+                            }
+                        });
+
+                        localStorage.removeItem('deepsweepState');
+                        localStorage.setItem('deepsweepState', JSON.stringify(cleanedData));
+                        
+                        if (typeof state !== 'undefined') {
+                            state = cleanedData;
+                        }
+
+                        alert("Backup imported successfully!");
+                        window.location.href = window.location.pathname + "?t=" + Date.now();
+                    }
+                } catch (err) {
+                    console.error("Import error:", err);
+                    alert("Error: The file is not a valid backup!");
+                }
+                importFile.value = '';
+            };
+            reader.readAsText(file);
+        });
+    }
 });
-
-// --- IMPORT DATA ---
-const importBtn = document.getElementById('importBtn');
-const importFile = document.getElementById('importFile');
-
-if (importBtn && importFile) {
-    importBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        importFile.click();
-    });
-
-    importFile.addEventListener('change', (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
-
-        const reader = new FileReader();
-        reader.onload = (event) => {
-            try {
-                const jsonString = event.target.result;
-                const importedData = JSON.parse(jsonString);
-                
-                // Provjera je li format ispravan
-                if (typeof importedData !== 'object' || importedData === null) {
-                    throw new Error("Invalid format");
-                }
-
-                if (confirm("This will overwrite your current progress. Continue?")) {
-                    // 1. Prebriši localStorage sa sirovim stringom iz fajla
-                    localStorage.setItem('deepsweepState', jsonString);
-                    
-                    // 2. Ažuriraj globalnu state varijablu (ako je koristiš u buildUI)
-                    state = importedData; 
-
-                    alert("Backup restored successfully! The page will now reload to apply changes.");
-                    
-                    // 3. PRISILNI RELOAD - ovo rješava problem sa stilom i checkboxovima
-                    window.location.href = window.location.pathname + window.location.search;
-                }
-            } catch (err) {
-                console.error("Import error:", err);
-                alert("Error: Invalid backup file!");
-            }
-            // Resetiraj input da se može isti file učitati dvaput ako treba
-            importFile.value = '';
-        };
-        reader.readAsText(file);
-    });
-}
-
 </script>
+
+</div>
+</div>
 </body>
 </html>
