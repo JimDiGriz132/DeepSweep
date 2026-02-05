@@ -1,7 +1,7 @@
 {
-  "current": "0.9.7",
+  "current": "0.9.7a",
   "changes": {
-	"0.9.7": [
+	"0.9.7a": [
 	"Items with same names now save state correctly",
 	"New and working item location links",
 	"Export & Import buttons more visible",
