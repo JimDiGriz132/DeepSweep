@@ -1,6 +1,11 @@
 {
-  "current": "0.9.7a",
+  "current": "0.9.8",
   "changes": {
+	"0.9.8": [
+	"Broken location links changed to new CloverSalad links",
+	"Added new Australia trash",
+	"Added Nuclear Plant trash"
+	],
 	"0.9.7a": [
 	"Items with same names now save state correctly",
 	"New and working item location links",
