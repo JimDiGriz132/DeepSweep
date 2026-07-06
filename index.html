@@ -1403,12 +1403,39 @@ document.addEventListener('click', (e) => {
   }
 });
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+  // Dodajemo vremensku oznaku (cache buster) kako bi preglednik UVIJEK povukao svježi service-worker.js sa servera
+  navigator.serviceWorker.register('/service-worker.js?v=' + Date.now(), { scope: '/' })
     .then(reg => {
       console.log('Service Worker registered');
-      console.log('Scope:', reg.scope);          // vidiš točno što je postavljeno
+
+      // Provjeravamo ima li ažuriranja pri svakom učitavanju aplikacije
+      reg.update();
+
+      // Ako se detektira novi Service Worker (promijenio si CACHE_NAME ili kod u SW-u)
+      reg.addEventListener('updatefound', () => {
+        const newWorker = reg.installing;
+        if (newWorker) {
+          newWorker.addEventListener('statechange', () => {
+            // Kada se novi SW uspješno instalira i stari je aktivan, obavještavamo o novoj verziji
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              console.log('[DeepSweep] Nova verzija je instalirana u pozadini.');
+            }
+          });
+        }
+      });
     })
     .catch(err => console.log('SW registration failed', err));
+
+  // KLJUČNI DIO: Kada novi SW javi "skipWaiting()" i preuzme kontrolu (claim),
+  // ova skripta će automatski jednom osvježiti stranicu kako bi povukla novi cache.
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!refreshing) {
+      refreshing = true;
+      console.log('[DeepSweep] Novi Service Worker preuzeo kontrolu. Osvježavam stranicu...');
+      window.location.reload();
+    }
+  });
 }
 
 // --- LocalStorage helpers ---
