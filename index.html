@@ -7,16 +7,87 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#004080">
 <style>
+/* ===== SKINS ===== */
+:root, [data-theme="default"] {
+  --bg-gradient: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  --main-accent: #00f2fe;
+  --target-color: #ffd700;
+  --floor-bg: linear-gradient(135deg, rgba(16, 33, 62, 0.8), rgba(15, 52, 96, 0.8));
+  --card-bg: rgba(25, 48, 88, 0.04);
+  --card-hover: linear-gradient(135deg, rgba(25, 48, 88, 0.9), rgba(20, 65, 120, 0.9));
+  --text-color: #ffffff;
+  --btn-bg: linear-gradient(90deg, #4facfe, #00f2fe);
+  --btn-hover-bg: linear-gradient(90deg, #3a8eff, #00cfff);
+  --btn-text: #ffffff;
+}
+
+[data-theme="neon-toxic"] {
+  --bg-gradient: linear-gradient(135deg, #0d1b15 0%, #072213 100%),
+                  url('toxic_bcg.png');
+  --main-accent: #39ff14;
+  --target-color: #ff007f;
+  --floor-bg: linear-gradient(135deg, rgba(13, 35, 21, 0.8), rgba(7, 45, 23, 0.8));
+  --card-bg: rgba(57, 255, 20, 0.04);
+  --card-hover: linear-gradient(135deg, rgba(57, 255, 20, 0.09), rgba(57, 255, 20, 0.06));
+  --text-color: #e0ffe0;
+  --btn-bg: linear-gradient(90deg, #1b4d22, #39ff14);
+  --btn-hover-bg: linear-gradient(90deg, #246b2f, #54ff38);
+  --btn-text: #0d1b15;
+}
+/*
+[data-theme="aqua-marine"] {
+  --bg-gradient: linear-gradient(135deg, #001f3f 0%, #0074d9 100%);
+  --main-accent: #7fdbff;
+  --target-color: #ffdc00;
+  --floor-bg: linear-gradient(135deg, rgba(0, 31, 63, 0.8), rgba(0, 80, 150, 0.8));
+  --card-bg: rgba(255, 255, 255, 0.07);
+  --card-hover: linear-gradient(135deg, rgba(0, 50, 100, 0.9), rgba(0, 100, 180, 0.9));
+  --text-color: #ffffff;
+  --btn-bg: linear-gradient(90deg, #00509d, #7fdbff);
+  --btn-hover-bg: linear-gradient(90deg, #003f88, #a3e7ff);
+  --btn-text: #001f3f;
+}
+
+[data-theme="amish-wood"] {
+  --bg-gradient: linear-gradient(135deg, #2b1d12 0%, #4a3525 100%);
+  --main-accent: #d4a373;
+  --target-color: #ffb703;
+  --floor-bg: linear-gradient(135deg, rgba(50, 34, 22, 0.8), rgba(80, 55, 35, 0.8));
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-hover: linear-gradient(135deg, rgba(74, 53, 37, 0.9), rgba(100, 75, 50, 0.9));
+  --text-color: #fefae0;
+  --btn-bg: linear-gradient(90deg, #5c4033, #d4a373);
+  --btn-hover-bg: linear-gradient(90deg, #4a3227, #e6b88a);
+  --btn-text: #2b1d12;
+}
+*/
+[data-theme="museum-workshop"] {
+  --bg-gradient: linear-gradient(135deg, rgba(46, 28, 22, 0.95) 0%, rgba(26, 15, 11, 0.95) 100%), 
+                 url('workshop_bcg.png');
+  --main-accent: #e5d3b3; 
+  --target-color: #8c3e2b; 
+  --floor-bg: linear-gradient(135deg, rgba(229, 211, 179, 0.15) 0%, rgba(210, 190, 155, 0.15) 100%);
+  --card-bg: rgba(229, 211, 179, 0.03);
+  --card-hover: linear-gradient(135deg, rgba(229, 211, 179, 0.08), rgba(229, 211, 179, 0.05));
+  --text-color: #f7ebd3;
+  --btn-bg: linear-gradient(90deg, #5c2c20, #8c3e2b);
+  --btn-hover-bg: linear-gradient(90deg, #733728, #a64f3b);
+  --btn-text: #f7ebd3;
+}
+
 /* ===== GLOBAL ===== */
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  background: var(--bg-gradient);
+  background-repeat: repeat; 
+  background-blend-mode: multiply; 
   background-attachment: fixed;
   margin: 0;
   padding: 16px;
   height: auto;
   min-height: 50dvh;
-  color: #ffffff;
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* WELCOME OVERLAY */
@@ -26,8 +97,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Poluprozirna crna */
-  backdrop-filter: blur(8px); /* Blur efekt kao na tvojim popupima */
+  background: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(8px); 
   -webkit-backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -99,11 +170,11 @@ body {
   width: 56px;
   height: 56px;
   background: #080c0d; 
-  border: 4px solid #00f2fe;
+  border: 4px solid var(--main-accent);
+  box-shadow: 0 0 15px var(--main-accent);
   border-radius: 50%;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +188,7 @@ body {
 .reel-dots {
   width: 24px;
   height: 24px;
-  border: 3px dotted #00f2fe;
+  border: 3px dotted var(--main-accent);
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -130,9 +201,9 @@ body {
   transform: translate(-50%, -50%);
   width: 12px;
   height: 12px;
-  background: #00f2fe;
+  background: var(--main-accent);
+  box-shadow: 0 0 10px var(--main-accent);
   border-radius: 50%;
-  box-shadow: 0 0 10px #00f2fe;
 }
 
 .reel-container {
@@ -189,8 +260,8 @@ body {
   width: 44px;
   height: 24px;
   border: 2px solid #ffd700;
-  border-radius: 12px;
   box-shadow: 0 0 8px #ffd700, inset 0 0 4px #ffd700;
+  border-radius: 12px;
   z-index: 1;
   animation: targetJitter 1.5s infinite ease-in-out;
 }
@@ -250,9 +321,9 @@ body {
 .version-style-btn, #appVersion {
     position: static !important;
     font-size: 10px;
-    color: #004080;
+    color: var(--btn-text) !important;
     font-weight: bold;
-    background: rgba(255,255,255,0.5);
+    background: var(--btn-bg) !important;
     padding: 2px 6px;
     border-radius: 5px;
     border: none;
@@ -322,7 +393,7 @@ body {
 }
 
 #itemSearch:focus {
-  border-color: #00f2fe;
+  border: 1px solid var(--main-accent);
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
 }
@@ -378,20 +449,20 @@ body {
 
 /* Dropdown */
 .menu-dropdown {
-  position: absolute;
-  top: 60px;
-  left: 10px;    
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border-radius: 10px;
-  padding: 12px 0;
-  min-width: 220px;
-  z-index: 10000;
-  margin-top: 4px;
   display: none;
+  position: absolute;
+  top: 75px;
+  right: 16px;
+  background: var(--floor-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid var(--main-accent);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  z-index: 1000;
+  width: 260px; 
+  padding: 8px 0;
+  transition: all 0.3s ease;
 }
 
 .menu-dropdown ul {
@@ -410,7 +481,11 @@ body {
   text-decoration: none;
   color: #333;
   display: block;
-}*/
+}
+
+
+
+
 
 /*.menu-dropdown a:hover {
   background: #f0f4ff;
@@ -432,8 +507,8 @@ body {
   padding: 5px 0px;
   gap: 10px; 
   justify-content: flex-start;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
-  color: white !important; 
+  background: var(--btn-bg) !important; 
+  color: var(--btn-text) !important; 
   font-weight: bold;
   font-size: 1em;
   text-align: center; 
@@ -452,11 +527,21 @@ body {
   appearance: none;
 }
 
+/* Prisilno prebrisavanje boje za linkove unutar izbornika */
+#menuDropdown .menu-item-btn a,
+.menu-dropdown .menu-item-btn a,
+#menuDropdown .menu-item-btn *,
+.menu-dropdown .menu-item-btn * {
+  color: var(--btn-text) !important;
+  text-decoration: none !important;
+  fill: var(--btn-text) !important;
+}
+
 /* Hover */
 .menu-item-btn:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 8px 25px rgba(79, 172, 254, 0.55);
-  background: linear-gradient(90deg, #3a8eff, #00cfff);
+  background: var(--btn-hover-bg) !important;
 }
 
 /* Active */
@@ -517,11 +602,11 @@ padding: 0 12px;
 #counter {
   text-align: center;
   font-size: 1.3em;
-  color: #004080;
+  color: var(--text-color);
   font-weight: 600;
   margin: 20px auto;
   padding: 12px 20px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--floor-bg);
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   max-width: 320px;
@@ -538,19 +623,21 @@ padding: 0 12px;
 
 /* ===== FLOORS, GROUPS, ITEMS ===== */
 .floor, .group > div, .item {
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: var(--card-bg) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin-bottom: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+  will-change: transform, opacity;
 }
 
+
 .floor:hover, .item:hover {
-  background: linear-gradient(135deg, rgba(25, 48, 88, 0.9), rgba(20, 65, 120, 0.9)) !important;
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+  background: var(--card-hover) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .floor-name, .group-name, .item-name {
@@ -561,8 +648,8 @@ padding: 0 12px;
 
 /* Floor */
 .floor {
-  background: linear-gradient(135deg, rgba(16, 33, 62, 0.8), rgba(15, 52, 96, 0.8)) !important;
-  border-left: 5px solid #00f2fe; /* Neon line left */
+  background: var(--floor-bg) !important;
+  border-left: 5px solid var(--main-accent);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -641,8 +728,8 @@ padding: 0 12px;
 
 /* Location btn  */
 a.locationBtn {
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
-  color: white;
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important; 
   border-radius: 12px;
   padding: 8px 16px;
   font-weight: 600;
@@ -656,50 +743,63 @@ a.locationBtn {
 }
 
 #openUncheckedBtn, #locationFilter {
-  background: rgba(0, 242, 254, 0.1);
-  border: 1px solid rgba(0, 242, 254, 0.5);
-  color: #00f2fe;
+  background: var(--btn-bg) !important;
+  border: 1px solid var(--main-accent);
+  color: var(--btn-text) !important;
   backdrop-filter: blur(5px);
   border-radius: 8px;
   padding: 8px 15px;
   font-weight: 600;
-  text-shadow: 0 0 5px rgba(0, 242, 254, 0.5);
-  box-shadow: inset 0 0 10px rgba(0, 242, 254, 0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.25s ease;
 }
 
 #openUncheckedBtn:hover {
-  background: #00f2fe;
-  color: white;
-  box-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+  background: var(--btn-hover-bg) !important;
+  box-shadow: 0 0 15px var(--main-accent);
 }
 
 #locationFilter {
-  background-color: rgba(0, 242, 254, 0.1) !important; 
-  color: #00f2fe !important;
-  border: 1px solid rgba(0, 242, 254, 0.5);
   padding: 8px 30px 8px 12px;
   border-radius: 8px;
   backdrop-filter: blur(10px);
   appearance: none;
   -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f2fe'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
   cursor: pointer;
 }
 
-
+/* Stil za opcije unutar dropdowna da prate trenutni card-bg ili floor-bg */
 #locationFilter option {
-  background-color: #16213e; 
-  color: #00f2fe;
+  background-color: #121212; /* Neutralna tamna pozadina za bolji kontrast na mobilnim sustavima */
+  color: #ffffff;
   padding: 10px;
 }
 
 
-
 /* Phone */
 @media (max-width: 640px) {
+body {
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-blend-mode: hard-light; !important;
+  }
+
+  .floor, .group > div, .item, .progress-container {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .floor { background: var(--floor-bg) !important; }
+  .item { background: var(--card-bg) !important; }
+  .progress-container { background: rgba(18, 26, 29, 0.95) !important; }
+
+  [data-theme="museum-workshop"] .group > div { background: rgba(26, 15, 11, 0.95) !important; }
+  [data-theme="neon-toxic"] .group > div { background: rgba(13, 35, 21, 0.95) !important; }
+
   .item > div {
     flex-direction: column;
     align-items: flex-start;
@@ -759,10 +859,36 @@ a.locationBtn {
   }
   
   .floor, .group > div, .item, .progress-container {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    background: rgba(20, 35, 60, 0.95) !important;
-  }
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Svaki element sada ispravno vuče pozadinu iz odabranog skina */
+.floor {
+  background: var(--floor-bg) !important;
+}
+
+.group > div {
+  background: rgba(255, 255, 255, 0.07) !important; /* Zadržava originalni prozirni štih grupe */
+}
+
+/* Ako je odabran Museum Workshop, na mobitelu dajemo grupi tamniju nijansu radi kontrasta */
+[data-theme="museum-workshop"] .group > div {
+  background: rgba(26, 15, 11, 0.95) !important;
+}
+
+[data-theme="neon-toxic"] .group > div {
+  background: rgba(13, 35, 21, 0.95) !important;
+}
+
+.item {
+  background: var(--card-bg) !important;
+}
+
+.progress-container {
+  background: rgba(18, 26, 29, 0.95) !important;
+}
+
   
   #container {
     will-change: transform;
@@ -777,7 +903,7 @@ a.locationBtn {
 .item img,
 .item .first-row img {
   height: 40px; 
-  width: auto;
+  width: 40px;
   object-fit: contain;
 
 }
@@ -785,15 +911,14 @@ a.locationBtn {
 /* Tooltip */
 .version-tooltip {
   position: fixed;
-  /* Isti stil kao menu-dropdown */
-  background: rgba(255, 255, 255, 0.15); /* Malo prozirnije za tamnu pozadinu */
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); /* Jača sjena za dubinu */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   
-  color: white; /* Tekst ostaje bijeli */
+  color: white;
   padding: 16px 20px;
   z-index: 10000;
   opacity: 0;
@@ -807,7 +932,7 @@ a.locationBtn {
 .version-tooltip strong {
   display: block;
   margin-bottom: 8px;
-  color: #00f2fe; /* Neon plava za naslov unutar tooltipa */
+  color: var(--main-accent); /* Prilagođava boju naslova trenutnoj temi */
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -828,7 +953,6 @@ a.locationBtn {
   color: rgba(255, 255, 255, 0.9);
 }
 
-
 .version-tooltip li::before {
   content: '';
   position: absolute;
@@ -836,9 +960,9 @@ a.locationBtn {
   top: 8px;
   width: 6px;
   height: 6px;
-  background: #00f2fe;
+  background: var(--main-accent); /* Prilagođava boju točkica na listi trenutnoj temi */
   border-radius: 50%;
-  box-shadow: 0 0 5px #00f2fe;
+  box-shadow: 0 0 5px var(--main-accent);
 }
 
 
@@ -849,10 +973,10 @@ a.locationBtn {
   height: auto;
   display: block;
   margin: 0 auto 0px auto;
-  filter: drop-shadow(0.5px 0.5px 0px #00f2fe) 
-          drop-shadow(-0.5px -0.5px 0px #00f2fe) 
-          drop-shadow(0.5px -0.5px 0px #00f2fe) 
-          drop-shadow(-0.5px 0.5px 0px #00f2fe);
+filter: drop-shadow(0.5px 0.5px 0px var(--main-accent)) 
+          drop-shadow(-0.5px -0.5px 0px var(--main-accent)) 
+          drop-shadow(0.5px -0.5px 0px var(--main-accent)) 
+          drop-shadow(-0.5px 0.5px 0px var(--main-accent));
 }
 
 .app-title {
@@ -879,15 +1003,34 @@ a.locationBtn {
   animation: broomSweep 0.8s ease-out forwards;
 }
 
+/* Broom animation */
+.broom-anim {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Kreće odmah nakon lijevog ruba */
+  transform: translateY(-50%) translateX(0) rotate(-15deg);
+  font-size: 24px;
+  pointer-events: none;
+  z-index: 10;
+  display: inline-block;
+  white-space: nowrap;
+  animation: broomSweep 0.8s ease-out forwards;
+}
+
 @keyframes broomSweep {
   0% {
+    /* Početak: na lijevoj strani */
     transform: translateY(-50%) translateX(0) rotate(-15deg);
     opacity: 0;
   }
-  20% {
+  15% {
+    opacity: 1;
+  }
+  85% {
     opacity: 1;
   }
   100% {
+    /* Kraj: var(--broom-end) preuzima točnu širinu cijelog diva iz JS-a */
     transform: translateY(-50%) translateX(var(--broom-end)) rotate(10deg);
     opacity: 0;
   }
@@ -917,7 +1060,7 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid #00f2fe;
+  border: 2px solid var(--main-accent);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
@@ -929,8 +1072,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background: #00f2fe;
-  box-shadow: 0 0 10px #00f2fe;
+  background: var(--main-accent);
+  box-shadow: 0 0 10px var(--main-accent);
 }
 
 input[type="checkbox"]:checked::after {
@@ -944,21 +1087,33 @@ input[type="checkbox"]:checked::after {
 }
 
 .group-counter {
-  background: rgba(0, 242, 254, 0.2) !important;
-  color: #004080 !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: var(--main-accent) !important;
   padding: 2px 8px !important;
   border-radius: 20px !important;
-  border: 1px solid rgba(0, 242, 254, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   font-weight: bold;
 }
 
 /* Active button style (filter on) */
 #openUncheckedBtn.active-filter {
-    background: #00f2fe !important;
-    color: white !important;
-    box-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+    background: var(--main-accent) !important;
+    color: var(--btn-text) !important;
+    box-shadow: 0 0 25px var(--main-accent);
     transform: scale(0.98);
 }
+
+/* Potpuno forsiranje boje teksta za sve varijacije gumba u meniju */
+.menu-dropdown a,
+.menu-dropdown a *,
+#menuDropdown a,
+#menuDropdown a *,
+a.menu-item-btn,
+a.menu-item-btn * {
+  color: var(--btn-text) !important;
+  text-decoration: none !important;
+}
+
 
 </style>
 </head>
@@ -1006,14 +1161,24 @@ input[type="checkbox"]:checked::after {
     <div id="appVersion"></div> <input type="file" id="importFile" style="display:none" accept=".json">
 </div>
 
-  <div id="menuDropdown" class="menu-dropdown">
+<div id="menuDropdown" class="menu-dropdown">
     <ul>
+      <!-- Izbornik za promjenu skina (teme) -->
+      <li>
+        <select id="themeSelect" class="menu-item-btn" style="text-align-last: center; appearance: auto; -webkit-appearance: auto;">
+          <option value="default" style="color: black;">Skin: Deep Dark</option>
+          <option value="neon-toxic" style="color: black;">Skin: Neon Toxic</option>
+          <!--<option value="aqua-marine" style="color: black;">Skin: Aqua Marine</option>-->
+          <!--<option value="amish-wood" style="color: black;">Skin: Amish Wood</option>-->
+          <option value="museum-workshop" style="color: black;">Skin: Museum Workshop</option>
+        </select>
+      </li>
+      
+      <!-- Ostatak tvog originalnog izbornika -->
       <li><button id="installBtn" class="menu-item-btn">Install</button></li>
       <li><a href="https://cloversalad.com/" class="menu-item-btn" target="_blank">CloverSalad</a></li>
       <li><a href="https://fish-metrics.com/" class="menu-item-btn" target="_blank">FishMetrics</a></li>
-
-	  <li><button id="showHelpBtn" class="menu-item-btn">Help & Instructions</button></li>
-	  
+      <li><button id="showHelpBtn" class="menu-item-btn">Help & Instructions</button></li>
     </ul>
   </div>
 </div>
@@ -1318,9 +1483,11 @@ fetch('/data.json')
       "Scotland",
       "Thailand",
       "Amazon",
-	  "Marina",
-	  "Chemical Plant",
-	  "Nuclear Plant"
+	    "Marina",
+	    "Chemical Plant",
+	    "Nuclear Plant",
+      "Petrochemical",
+      "Bermuda Triangle"
     ];
 
     const locationFilter = document.getElementById('locationFilter');
@@ -1343,17 +1510,6 @@ fetch('/data.json')
     console.error("Failed to load data.json", err);
   });
   
-  
-    // --- Populate Location Dropdown ---
-   //const locationFilter = document.getElementById('locationFilter');
-    //const locationsSet = new Set();
-    //data.forEach(item=>{ if(item.locationName) locationsSet.add(item.locationName); });
-    //locationsSet.forEach(loc=>{
-      //const opt = document.createElement('option');
-      //opt.value = loc;
-      //opt.textContent = loc;
-      //locationFilter.appendChild(opt);
-   //});
 
 
 
@@ -1374,7 +1530,7 @@ function createItem(item, groupCheckbox, floorCheckbox) {
   const wrapper = document.createElement('div');
     
   // 1. GENERIRANJE IDENTIČNOG ID-A
-  // Prvo očistimo svaku komponentu od razmaka, a onda ih spojimo podvlakom
+
   const f = (item.floor || "").replace(/\s/g, '_');
   const g = (item.group || "").replace(/\s/g, '_');
   const n = (item.name || "").replace(/\s/g, '_');
@@ -1387,7 +1543,6 @@ function createItem(item, groupCheckbox, floorCheckbox) {
   cb.id = id; 
   cb.dataset.id = id;
 
-  // Provjera stanja u memoriji
   if (state[id] !== undefined) {
     cb.checked = state[id];
   }
@@ -1421,7 +1576,6 @@ function createItem(item, groupCheckbox, floorCheckbox) {
   wrapper.appendChild(firstRow);
   wrapper.appendChild(label);
 
-  // Gumb za lokaciju (ovdje koristimo originalni item.locationName s razmacima za prikaz)
   if (item.locationName && item.locationLink) {
     const locBtn = document.createElement('a');
     locBtn.textContent = item.locationName;
@@ -1507,20 +1661,29 @@ function createItem(item, groupCheckbox, floorCheckbox) {
     const cb=document.createElement('input'); cb.type='checkbox'; cb.dataset.id=id;
     if(state[id]!==undefined) cb.checked=state[id];
 
-    cb.addEventListener('change', ()=>{
+      cb.addEventListener('change', ()=>{
         const checked = cb.checked;
+        
+        window.isMassChecking = true;
+
         li.querySelectorAll('li.group > div > input[type=checkbox], li.item input[type=checkbox]').forEach(i=>{
             i.checked = checked;
             if(i.dataset.id) state[i.dataset.id] = i.checked;
-		
-		if(i.dataset.id && i.dataset.id.startsWith('group_')) {
-            i.dispatchEvent(new Event('change'));
-        }	
-		
+    
+            if(i.dataset.id && i.dataset.id.startsWith('group_')) {
+                i.dispatchEvent(new Event('change'));
+            } 
         });
+
+        window.isMassChecking = false;
+
         state[id] = checked;
         saveState(state);
         updateCounter();
+
+        if (checked) {
+            playBroomAnimation(li);
+        }
     });
 
     const label=document.createElement('span'); label.textContent=floorName;
@@ -1550,38 +1713,71 @@ function createItem(item, groupCheckbox, floorCheckbox) {
   groupCheckbox.checked = allChecked;
 
 if (allChecked) {
-  // group animation
-  playBroomAnimation(groupLi);
+  // Pokreni animaciju samo ako korisnik ručno klikće grupu, a ne preko floora
+  if (!window.isMassChecking) {
+    playBroomAnimation(groupLi);
+  }
 
   // haptic feedback
   if (navigator.vibrate) {
     navigator.vibrate([20, 30, 20]);
   }
 }
-function playBroomAnimation(groupLi) {
-  const wrapper = groupLi.querySelector('div');
-  const checkbox = wrapper.querySelector('input[type="checkbox"]');
-  const label = wrapper.querySelector('span');
 
-  if (!wrapper || !checkbox || !label) return;
+function playBroomAnimation(elementLi) {
+  const wrapper = elementLi.querySelector('div');
+  if (!wrapper) return;
+
+  
+  if (wrapper.querySelector('.broom-anim')) return;
+
+  
+  if (!document.getElementById('broom-animation-styles')) {
+    const styleSheet = document.createElement("style");
+    styleSheet.id = 'broom-animation-styles';
+    styleSheet.innerText = `
+      @keyframes dynamicBroomSweep {
+        0% { transform: translateY(-50%) translateX(0) rotate(-15deg); opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { transform: translateY(-50%) translateX(var(--broom-end)) rotate(10deg); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(styleSheet);
+  }
 
   const broom = document.createElement('span');
   broom.textContent = '🧹';
   broom.className = 'broom-anim';
 
+  
   wrapper.style.position = 'relative';
+  
+  broom.style.position = 'absolute';
+  broom.style.top = '50%';
+  broom.style.left = '10px'; 
+  broom.style.fontSize = '24px';
+  broom.style.pointerEvents = 'none';
+  broom.style.zIndex = '100'; 
+  broom.style.display = 'inline-block';
+  broom.style.whiteSpace = 'nowrap';
+  
+  broom.style.animation = 'dynamicBroomSweep 1.5s ease-out forwards';
+
+  const totalWidth = wrapper.offsetWidth - 40;
+  broom.style.setProperty('--broom-end', totalWidth + 'px');
+
   wrapper.appendChild(broom);
-
-  // group start = checkbox
-  const startX = checkbox.offsetLeft;
-  const endX = label.offsetLeft + label.offsetWidth;
-
-  broom.style.left = startX + 'px';
-  broom.style.setProperty('--broom-end', endX + 'px');
 
   broom.addEventListener('animationend', () => {
     broom.remove();
   });
+
+  setTimeout(() => {
+    if (broom && broom.parentNode) {
+      broom.remove();
+    }
+  }, 1550);
 }
 
   // floor logic
@@ -1949,7 +2145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const rawLocations = [
                             "Paradise Island", "Great Lakes", "Costa Rica", "Alaska", 
                             "Australia", "Scotland", "Thailand", "Amazon", 
-                            "Marina", "Chemical Plant"
+                            "Marina", "Chemical Plant", "Nuclear Plant"
                         ];
 
                         const validSuffixes = rawLocations.map(loc => "_" + loc.replace(/\s/g, '_'));
@@ -1983,9 +2179,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// --- SKIN CHANGE  ---
+(function() {
+  const themeSelect = document.getElementById('themeSelect');
+  const menuDropdown = document.getElementById('menuDropdown'); // Dodano radi lakšeg zatvaranja izbornika
+  
+  // load skin or make default
+  const savedTheme = localStorage.getItem('deepsweep_theme') || 'default';
+  
+  // skin change function
+  function applyTheme(themeName) {
+    document.documentElement.setAttribute('data-theme', themeName);
+    localStorage.setItem('deepsweep_theme', themeName);
+    if (themeSelect) {
+      themeSelect.value = themeName;
+    }
+  }
+
+  // load at startup
+  applyTheme(savedTheme);
+
+  // listen to dropdown menu change
+  if (themeSelect) {
+    themeSelect.addEventListener('change', (e) => {
+      applyTheme(e.target.value);
+      
+      // theme change then turn off menu
+      if (menuDropdown) {
+        menuDropdown.style.display = 'none';
+      }
+      
+      // phone vibration
+      if (navigator.vibrate) navigator.vibrate(15);
+    });
+    
+    // don't close menu when clicking on select itself
+    themeSelect.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+      themeSelect.addEventListener('touchend', (e) => {
+        e.stopPropagation();
+      });
+    }
+  }
+})();
+
+
 </script>
 
-</div>
-</div>
 </body>
 </html>

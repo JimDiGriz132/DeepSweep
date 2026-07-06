@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deepsweep-cache-v0.9.9';  // ← promijeni verziju kad mijenjaš fajlove!
+const CACHE_NAME = 'deepsweep-cache-v1.0';  // ← promijeni verziju kad mijenjaš fajlove!
 
 const urlsToCache = [
   '/', 
@@ -9,7 +9,8 @@ const urlsToCache = [
   '/logo.png',
   '/icon-192.png',
   '/icon-512.png'
-
+  '/workshop_bcg.png'
+  '/toxic_bcg.png'
 ];
 
 self.addEventListener('install', event => {
