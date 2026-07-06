@@ -1059,7 +1059,7 @@
         "floor": "Ground Floor",
         "group": "Library",
         "name": "Prof. Flux's Notes",
-        "img": "images/CP_T_Prof._Flux%27s_notes_2.png",
+        "img": "images/CP_T_Prof._Fluxs_notes_2.png",
         "locationName": "Chemical Plant",
         "locationLink": "https://cloversalad.com/maps/chemical-plant/items/?id=T9-19"
     },
@@ -1371,7 +1371,7 @@
         "floor": "Ground Floor - Bridge Extension",
         "group": "Chests",
         "name": "Lunchbox",
-        "img": "images/latest?cb=20260221021034",
+        "img": "images/NP_T_Lunchbox_2.png",
         "locationName": "Nuclear Plant",
         "locationLink": "https://cloversalad.com/maps/nuclear-plant/items/?id=tb18"
     },
@@ -1939,7 +1939,7 @@
         "floor": "Upstairs",
         "group": "Flora 1",
         "name": "Cat’s Claw Liana",
-        "img": "images/AM_T_%22Cat%27s_Claw%22_Liana.png",
+        "img": "images/AM_T_Cats_Claw_Liana.png",
         "locationName": "Amazon",
         "locationLink": "https://cloversalad.com/maps/amazon/items/?id=T8-10"
     },
