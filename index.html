@@ -560,9 +560,9 @@ padding: 0 12px;
 /* Popup style */
 .fish-popup {
   position: absolute;
-  bottom: 40px; /* Pozicija iznad ribe */
+  top: 40px; /* Pozicija ispod ribe */
   left: 50%;
-  transform: translateX(-50%) translateY(10px);
+  transform: translateX(-50%) translateY(-10px);
   background: #ffd700; /* Žuta boja kao meta */
   color: #000;
   padding: 4px 12px;
@@ -580,12 +580,12 @@ padding: 0 12px;
 .fish-popup::after {
     content: '';
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
-    border-color: #ffd700 transparent transparent transparent;
+    border-color: transparent transparent #ffd700 transparent;
 }
 
 /* Hover (PC) & active class (Mobile) */
@@ -804,9 +804,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-	justify-content: center; 
+  justify-content: center; 
     min-height: 100px;
-	padding: 6px 4px 6px 4px;
+  padding: 6px 4px 6px 4px;
   }
 
   .item label {
@@ -820,20 +820,20 @@ body {
   
   a.locationBtn {
     font-weight: 400;
-	text-align: center;
+  text-align: center;
     margin-left: 0;
     align-self: flex-start;
-	margin-left: 32px;
+  margin-left: 32px;
     width: 170px;
 
-	box-sizing: border-box;
-	white-space: nowrap;
+  box-sizing: border-box;
+  white-space: nowrap;
   }
   
   .floor > div {
       display: flex;
       align-items: center; 
-	  gap: 5px;
+    gap: 5px;
   }
   .floor b, .floor span { 
       font-size: 13px !important; 
@@ -1127,7 +1127,7 @@ a.menu-item-btn * {
       <ul>
         <li><strong>Progress Storage:</strong> Your data is saved <strong>locally</strong> in your browser's storage.</li>
         <li><strong>Warning:</strong> Clearing your browser cache or "Website Data" will <strong>permanently delete</strong> all your progress!</li>
-		<li><strong>Export</strong> makes a backup file of your trash collection, <strong>Import</strong> restores from created file.</li>
+    <li><strong>Export</strong> makes a backup file of your trash collection, <strong>Import</strong> restores from created file.</li>
         <li><strong>What's New:</strong> Tap the version number in the top right corner to see recent updates and changes.</li>
       </ul>
     </div>
@@ -1483,9 +1483,9 @@ fetch('/data.json')
       "Scotland",
       "Thailand",
       "Amazon",
-	    "Marina",
-	    "Chemical Plant",
-	    "Nuclear Plant",
+      "Marina",
+      "Chemical Plant",
+      "Nuclear Plant",
       "Petrochemical",
       "Bermuda Triangle"
     ];
@@ -1945,7 +1945,7 @@ fetch('/version.json')
       document.body.appendChild(tooltip);
 
       const rect = badge.getBoundingClientRect();
-	  tooltip.style.top = (rect.bottom + window.scrollY + 8) + 'px';
+    tooltip.style.top = (rect.bottom + window.scrollY + 8) + 'px';
 
       let left = rect.left + window.scrollX;
       const tooltipWidth = tooltip.offsetWidth;

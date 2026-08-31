@@ -1,6 +1,9 @@
- {
-  "current": "1.0",
+{
+  "current": "1.1",
   "changes": {
+  "1.1":[
+  	"Fixed fish counter tooltip position, avoiding overlap with toolbar buttons"
+  ],
   "1.0":[
   	"Petrochemical & Bermuda Triangle items added",
   	"Skins added"
