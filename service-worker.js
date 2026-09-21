@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deepsweep-cache-v1.2';  // ← promijeni verziju kad mijenjaš fajlove!
+const CACHE_NAME = 'deepsweep-cache-v1.3';  // ← promijeni verziju kad mijenjaš fajlove!
 
 const urlsToCache = [
   '/', 
