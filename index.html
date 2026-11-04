@@ -1988,7 +1988,8 @@ fetch('/data.json')
       "Chemical Plant",
       "Nuclear Plant",
       "Petrochemical",
-      "Bermuda Triangle"
+      "Bermuda Triangle",
+      "Cosmos"
     ];
 
     const locationFilter = document.getElementById('locationFilter');
@@ -2077,12 +2078,21 @@ function createItem(item, groupCheckbox, floorCheckbox) {
   wrapper.appendChild(firstRow);
   wrapper.appendChild(label);
 
-  if (item.locationName && item.locationLink) {
+    const link = (item.locationLink || "").trim();
+  if (item.locationName && link) {
     const locBtn = document.createElement('a');
     locBtn.textContent = item.locationName;
-    locBtn.href = item.locationLink;
-    locBtn.target = '_blank';
     locBtn.className = 'locationBtn';
+
+    if (link === "TODO") {
+      // nema pravog linka: gumb se prikazuje, ali ništa ne otvara
+      locBtn.classList.add('no-link');
+      locBtn.addEventListener('click', e => e.preventDefault());
+    } else {
+      locBtn.href = link;
+      locBtn.target = '_blank';
+    }
+
     wrapper.appendChild(locBtn);
   }
 
@@ -2682,7 +2692,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             "Paradise Island", "Great Lakes", "Costa Rica", "Alaska", 
                             "Australia", "Scotland", "Thailand", "Amazon", 
                             "Marina", "Chemical Plant", "Nuclear Plant",
-                            "Petrochemical", "Bermuda Triangle"
+                            "Petrochemical", "Bermuda Triangle", "Cosmos"
                         ];
 
                         const validSuffixes = rawLocations.map(loc => "_" + loc.replace(/\s/g, '_'));

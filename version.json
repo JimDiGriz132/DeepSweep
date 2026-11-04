@@ -1,6 +1,9 @@
 {
-  "current": "1.4",
+  "current": "1.5",
   "changes": {
+  "1.5":[
+  	"Added Cosmos items (location links coming soon)"
+  ],
   "1.4":[
   	"Fixed fish counter popup being cut off at the screen edge when near 100%",
   	"Added scrollable Version History popup (accessible from the version tooltip)",

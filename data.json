@@ -97,6 +97,14 @@
     },
     {
         "floor": "Ground Floor",
+        "group": "Glasses",
+        "name": "Space Helmet",
+        "img": "images/Trash_SpacesuitHelmet.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor",
         "group": "Hats",
         "name": "Koala Hat",
         "img": "images/AU_T_Koala_hat_2.png",
@@ -337,6 +345,14 @@
     },
     {
         "floor": "Ground Floor",
+        "group": "Gloves",
+        "name": "Space Glove",
+        "img": "images/Trash_SpaceSuitGlove.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor",
         "group": "Shoes",
         "name": "Concrete Shoe",
         "img": "images/GL_T_Concrete_shoe_2.png",
@@ -393,6 +409,14 @@
     },
     {
         "floor": "Ground Floor",
+        "group": "Shoes",
+        "name": "Space Boot",
+        "img": "images/Trash_SpaceBoot.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor",
         "group": "Antiques 1",
         "name": "Armor",
         "img": "images/SC_T_Armor_2.png",
@@ -414,6 +438,14 @@
         "img": "images/CP_T_Sai_knive_2.png",
         "locationName": "Chemical Plant",
         "locationLink": "https://cloversalad.com/maps/chemical-plant/items/?id=T9-28"
+    },
+    {
+        "floor": "Ground Floor",
+        "group": "Antiques 1",
+        "name": "Light Penknife",
+        "img": "images/Trash_LightPenknife.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
     },
     {
         "floor": "Ground Floor",
@@ -681,6 +713,14 @@
     },
     {
         "floor": "Ground Floor",
+        "group": "Antiques 3",
+        "name": "Black Monolith",
+        "img": "images/Trash_BlackMonolith.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor",
         "group": "Antiques 4",
         "name": "Sporran",
         "img": "images/SC_T_Tartan_2.png",
@@ -710,6 +750,14 @@
         "img": "images/Trash_Wallet.png",
         "locationName": "Bermuda Triangle",
         "locationLink": "https://cloversalad.com/maps/bermuda-triangle/items/?id=DT-21"
+    },
+    {
+        "floor": "Ground Floor",
+        "group": "Antiques 4",
+        "name": "Fleet Insignia",
+        "img": "images/Trash_FleetInsignia.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
     },
     {
         "floor": "Ground Floor",
@@ -1280,6 +1328,22 @@
         "locationLink": "https://cloversalad.com/maps/petrochemical/items/?id=tc18"
     },
     {
+        "floor": "Ground Floor",
+        "group": "Library",
+        "name": "Donut Panic Book",
+        "img": "images/Trash_DonutPanic.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor",
+        "group": "Library",
+        "name": "Space Map",
+        "img": "images/Trash_SpaceTreasureMap.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
         "floor": "Ground Floor - Bridge Extension",
         "group": "Sports 1",
         "name": "Bicycle Frame",
@@ -1665,6 +1729,14 @@
     },
     {
         "floor": "Ground Floor - Bridge Extension",
+        "group": "Signs",
+        "name": "Covid Sign",
+        "img": "images/Trash_CovidSign.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor - Bridge Extension",
         "group": "Laboratory 1",
         "name": "Geiger Counter",
         "img": "images/CP_T_Geiger_Counter_2.png",
@@ -1753,6 +1825,30 @@
     },
     {
         "floor": "Ground Floor - Bridge Extension",
+        "group": "Laboratory 1",
+        "name": "Robot Arm",
+        "img": "images/Trash_RobotArm.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor - Bridge Extension",
+        "group": "Laboratory 1",
+        "name": "Robot Brain",
+        "img": "images/Trash_RobotBrain.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor - Bridge Extension",
+        "group": "Laboratory 1",
+        "name": "Robot Mouth",
+        "img": "images/Trash_RobotMouth.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Ground Floor - Bridge Extension",
         "group": "Laboratory 2",
         "name": "Laboratory Equipment",
         "img": "images/CP_T_Laboratory_equipment_2.png",
@@ -1789,7 +1885,7 @@
         "name": "Wind Turbine (Assembled)",
         "img": "images/windturbine.png",
         "locationName": "Chemical Plant",
-        "locationLink": ""
+        "locationLink": "TODO"
     },
     {
         "floor": "Ground Floor - Bridge Extension",
@@ -2209,6 +2305,14 @@
     },
     {
         "floor": "Upstairs",
+        "group": "Flora 1",
+        "name": "Little Rose",
+        "img": "images/Trash_LittleRose.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Upstairs",
         "group": "Flora 2",
         "name": "Toxic Branch",
         "img": "images/CP_T_Toxic_branch_2.png",
@@ -2593,6 +2697,22 @@
     },
     {
         "floor": "Upstairs - Wood Bridge Extension",
+        "group": "Stones",
+        "name": "Small Comet",
+        "img": "images/Trash_SmallComet.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Upstairs - Wood Bridge Extension",
+        "group": "Stones",
+        "name": "Dark Matter Poop",
+        "img": "images/Trash_DarkMatterPoop.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
+        "floor": "Upstairs - Wood Bridge Extension",
         "group": "Musical Instruments",
         "name": "Brazil Drums",
         "img": "images/AM_T_Brazil_Drums.png",
@@ -2720,12 +2840,28 @@
         "locationLink": "https://cloversalad.com/maps/australia/items/?id=T5-30"
     },
     {
+        "floor": "Upstairs - Wood Bridge Extension",
+        "group": "Vinyl Records",
+        "name": "Voyager Golden Record",
+        "img": "images/Trash_VoyagerGoldenRecord.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
+    },
+    {
         "floor": "Upstairs - Whale Bone Bridge Extension",
         "group": "Chairs",
         "name": "Chair",
         "img": "images/Trash_Chair.png",
         "locationName": "Bermuda Triangle",
         "locationLink": "https://cloversalad.com/maps/bermuda-triangle/items/?id=DT-5"
+    },
+    {
+        "floor": "Upstairs - Whale Bone Bridge Extension",
+        "group": "Chairs",
+        "name": "Rocket Chair",
+        "img": "images/Trash_ChineseFireworksChair.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
     },
     {
         "floor": "Upstairs - Whale Bone Bridge Extension",
@@ -2806,6 +2942,14 @@
         "img": "images/Trash_DinoToy.png",
         "locationName": "Bermuda Triangle",
         "locationLink": "https://cloversalad.com/maps/bermuda-triangle/items/?id=DT-6"
+    },
+    {
+        "floor": "Upstairs - Whale Bone Bridge Extension",
+        "group": "Toys",
+        "name": "Flying Saucer",
+        "img": "images/Trash_FlyingSaucer.png",
+        "locationName": "Cosmos",
+        "locationLink": "TODO"
     },
     {
         "floor": "Upstairs - Whale Bone Bridge Extension",
