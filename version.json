@@ -1,6 +1,9 @@
 {
-  "current": "1.5",
+  "current": "1.6",
   "changes": {
+  "1.6":[
+  	"Added found/total counters to the location dropdown."
+  ],
   "1.5":[
   	"Added Cosmos items (location links coming soon)"
   ],

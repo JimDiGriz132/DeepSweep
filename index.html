@@ -1750,6 +1750,34 @@ if ('serviceWorker' in navigator) {
 function loadState(){ return JSON.parse(localStorage.getItem('deepsweepState')||'{}'); }
 function saveState(state){ localStorage.setItem('deepsweepState', JSON.stringify(state)); }
 
+// --- Brojači po lokaciji u dropdownu ---
+function updateLocationCounts() {
+    const sel = document.getElementById('locationFilter');
+    if (!sel || !sel.options.length) return;
+
+    const stats = {};
+    let allTotal = 0, allFound = 0;
+    document.querySelectorAll('li.item').forEach(li => {
+        const cb = li.querySelector('input[type="checkbox"]');
+        if (!cb) return;
+        allTotal++;
+        if (cb.checked) allFound++;
+        const locBtn = li.querySelector('.locationBtn');
+        const loc = locBtn ? locBtn.textContent : null;
+        if (!loc) return;
+        if (!stats[loc]) stats[loc] = { total: 0, found: 0 };
+        stats[loc].total++;
+        if (cb.checked) stats[loc].found++;
+    });
+
+    Array.from(sel.options).forEach(opt => {
+        const s = opt.value === '-all-' ? { total: allTotal, found: allFound } : stats[opt.value];
+        if (!s) return;
+        const done = s.total > 0 && s.found === s.total;
+        opt.textContent = `${opt.value} (${s.found}/${s.total})${done ? ' ✓' : ''}`;
+    });
+}
+
 // --- Counter ---
 let deepsweepWasComplete = null; // null = još ne znamo (prije prvog stvarnog izračuna)
 
@@ -1795,6 +1823,8 @@ function updateCounter(isInitialLoad) {
         }
         deepsweepWasComplete = isComplete;
     }
+
+    updateLocationCounts();
 }
 
 // Popup ribe: pazi da ne izlazi izvan ekrana (npr. kad je riba blizu 100% na desnom rubu)
@@ -2007,6 +2037,7 @@ fetch('/data.json')
         locationFilter.appendChild(opt);
       }
     });
+    updateLocationCounts();
   })
   .catch(err => {
     console.error("Failed to load data.json", err);
