@@ -748,7 +748,7 @@ a.locationBtn {
   margin-left: auto;
 }
 
-#openUncheckedBtn, #locationFilter {
+#openUncheckedBtn, #openFoundBtn, #locationFilter {
   background: var(--btn-bg) !important;
   border: 1px solid var(--main-accent);
   color: var(--btn-text) !important;
@@ -760,7 +760,7 @@ a.locationBtn {
   transition: all 0.25s ease;
 }
 
-#openUncheckedBtn:hover {
+#openUncheckedBtn:hover, #openFoundBtn:hover {
   background: var(--btn-hover-bg) !important;
   box-shadow: 0 0 15px var(--main-accent);
 }
@@ -1122,7 +1122,7 @@ input[type="checkbox"]:checked::after {
 }
 
 /* Active button style (filter on) */
-#openUncheckedBtn.active-filter {
+#openUncheckedBtn.active-filter, #openFoundBtn.active-filter {
     background: var(--main-accent) !important;
     color: var(--btn-text) !important;
     box-shadow: 0 0 25px var(--main-accent);
@@ -1531,6 +1531,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 <!-- Find Unfound + Location Filter -->
 <button id="openUncheckedBtn">Missing Items</button>
+<button id="openFoundBtn">Found Items</button>
 <select id="locationFilter">
   <option value="-all-">-all-</option>
 </select>
@@ -2350,56 +2351,80 @@ function syncGroupAndFloorCheckboxes() {
   });
 }
 
-// --- Find Unfound with Location Filter (Toggle Behavior) ---
-let missingOpen = false; 
+// --- Missing / Found Items with Location Filter (Toggle Behavior) ---
+let missingOpen = false;
+let foundOpen = false;
 
-function runMissingItemsFilter() {
-  const filter = document.getElementById('locationFilter').value;
-  const btn = document.getElementById('openUncheckedBtn'); 
-
-  if (missingOpen) {
-    document.querySelectorAll('li.floor').forEach(floorLi => {
-      const groupsList = floorLi.querySelector('ul');
-      if (groupsList) groupsList.style.display = 'none';
-      const floorToggle = floorLi.querySelector('.toggle');
-      if (floorToggle) floorToggle.textContent = '▶';
-      floorLi.querySelectorAll('li.group').forEach(groupLi => {
-        const ul = groupLi.querySelector('ul');
-        const toggle = groupLi.querySelector('.toggle');
-        if (ul) ul.style.display = 'none';
-        if (toggle) toggle.textContent = '▶';
-        groupLi.querySelectorAll('li.item').forEach(itemLi => {
-          itemLi.style.display = '';
-        });
+function collapseAllAndShowItems() {
+  document.querySelectorAll('li.floor').forEach(floorLi => {
+    const groupsList = floorLi.querySelector('ul');
+    if (groupsList) groupsList.style.display = 'none';
+    const floorToggle = floorLi.querySelector('.toggle');
+    if (floorToggle) floorToggle.textContent = '▶';
+    floorLi.querySelectorAll('li.group').forEach(groupLi => {
+      const ul = groupLi.querySelector('ul');
+      const toggle = groupLi.querySelector('.toggle');
+      if (ul) ul.style.display = 'none';
+      if (toggle) toggle.textContent = '▶';
+      groupLi.querySelectorAll('li.item').forEach(itemLi => {
+        itemLi.style.display = '';
       });
     });
-    btn.classList.remove('active-filter'); 
+  });
+}
+
+// mode: 'missing' (unchecked) or 'found' (checked)
+function runItemsFilter(mode) {
+  const filter = document.getElementById('locationFilter').value;
+  const missingBtn = document.getElementById('openUncheckedBtn');
+  const foundBtn = document.getElementById('openFoundBtn');
+  const isActive = mode === 'missing' ? missingOpen : foundOpen;
+
+  // Klik na već aktivan gumb -> ugasi filter
+  if (isActive) {
+    collapseAllAndShowItems();
+    missingBtn.classList.remove('active-filter');
+    foundBtn.classList.remove('active-filter');
     missingOpen = false;
+    foundOpen = false;
     return;
   }
 
+  // Uključi traženi mod (a drugi isključi)
+  missingOpen = mode === 'missing';
+  foundOpen = mode === 'found';
+  missingBtn.classList.toggle('active-filter', missingOpen);
+  foundBtn.classList.toggle('active-filter', foundOpen);
+
+  applyItemsFilter();
+}
+
+function applyItemsFilter() {
+  const filter = document.getElementById('locationFilter').value;
+  const wantChecked = foundOpen;
+
   document.querySelectorAll('li.floor').forEach(floorLi => {
-    let floorHasUnchecked = false;
+    let floorHasMatch = false;
     floorLi.querySelectorAll('li.group').forEach(groupLi => {
-      let groupHasUnchecked = false;
+      let groupHasMatch = false;
       groupLi.querySelectorAll('li.item').forEach(itemLi => {
         const cb = itemLi.querySelector('input[type=checkbox]');
         const locBtn = itemLi.querySelector('.locationBtn');
         const locName = locBtn ? locBtn.textContent : null;
         const matchesLocation = filter === '-all-' || filter === locName;
-        if (!matchesLocation || cb.checked) {
+        if (!matchesLocation || cb.checked !== wantChecked) {
           itemLi.style.display = 'none';
           return;
         }
         itemLi.style.display = '';
-        groupHasUnchecked = true;
+        groupHasMatch = true;
       });
       const ul = groupLi.querySelector('ul');
       const toggle = groupLi.querySelector('.toggle');
-      if (groupHasUnchecked) {
+      if (groupHasMatch) {
         ul.style.display = 'block';
         toggle.textContent = '▼';
-        floorHasUnchecked = true;
+        floorHasMatch = true;
       } else {
         ul.style.display = 'none';
         toggle.textContent = '▶';
@@ -2407,7 +2432,7 @@ function runMissingItemsFilter() {
     });
     const floorUl = floorLi.querySelector('ul');
     const floorToggle = floorLi.querySelector('.toggle');
-    if (floorHasUnchecked) {
+    if (floorHasMatch) {
       floorUl.style.display = 'block';
       floorToggle.textContent = '▼';
     } else {
@@ -2415,18 +2440,18 @@ function runMissingItemsFilter() {
       floorToggle.textContent = '▶';
     }
   });
-  btn.classList.add('active-filter');
-  missingOpen = true;
 }
 
+function runMissingItemsFilter() { runItemsFilter('missing'); }
+function runFoundItemsFilter() { runItemsFilter('found'); }
 
 function refreshMissingItemsFilter() {
-  if (!missingOpen) return;
-  missingOpen = false;
-  runMissingItemsFilter();
+  if (!missingOpen && !foundOpen) return;
+  applyItemsFilter();
 }
 
 document.getElementById('openUncheckedBtn').addEventListener('click', runMissingItemsFilter);
+document.getElementById('openFoundBtn').addEventListener('click', runFoundItemsFilter);
 document.getElementById('locationFilter').addEventListener('change', refreshMissingItemsFilter);
 
 // ================= VERSION BADGE TOOLTIP =================
@@ -2574,13 +2599,17 @@ if (itemSearch && clearSearch) {
         const term = this.value.toLowerCase().trim();
         
         
-        if (term.length > 0 && typeof missingOpen !== 'undefined' && missingOpen) {
+        if (term.length > 0 && (missingOpen || foundOpen)) {
             missingOpen = false;
+            foundOpen = false;
             const miBtn = document.getElementById('openUncheckedBtn');
             if (miBtn) miBtn.classList.remove('active-filter');
+            const fiBtn = document.getElementById('openFoundBtn');
+            if (fiBtn) fiBtn.classList.remove('active-filter');
         }
 
-        const isMissingOnly = (typeof missingOpen !== 'undefined') ? missingOpen : false;
+        const isMissingOnly = missingOpen;
+        const isFoundOnly = foundOpen;
 
         
         clearSearch.style.display = term.length > 0 ? 'flex' : 'none';
@@ -2596,7 +2625,7 @@ if (itemSearch && clearSearch) {
                     const cb = itemLi.querySelector('input[type=checkbox]');
                     
                     const matchesSearch = label.includes(term);
-                    let matchesMissing = isMissingOnly ? !cb.checked : true;
+                    let matchesMissing = isMissingOnly ? !cb.checked : (isFoundOnly ? cb.checked : true);
 
                     if (matchesSearch && matchesMissing) {
                         itemLi.style.display = '';
@@ -2644,7 +2673,10 @@ if (itemSearch && clearSearch) {
         
         const miBtn = document.getElementById('openUncheckedBtn');
         if (miBtn) miBtn.classList.remove('active-filter');
-        if (typeof missingOpen !== 'undefined') missingOpen = false;
+        const fiBtn2 = document.getElementById('openFoundBtn');
+        if (fiBtn2) fiBtn2.classList.remove('active-filter');
+        missingOpen = false;
+        foundOpen = false;
 
         
         itemSearch.dispatchEvent(new Event('input'));
